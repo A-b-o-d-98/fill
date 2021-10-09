@@ -1,0 +1,402 @@
+[
+ {
+        "id":70,
+        "qusetion":" ' How many except statements can a try-except block have? ' ",
+        "incorrect_answer":["zero","one","more than one"],
+        "correct_answer":"more than zero"
+    },
+ {
+        "id":71,
+        "qusetion":" ' Is the following Python code valid? try:  # Do something except:  # Do something finally:  # Do something ' ",
+        "incorrect_answer":["no, there is no such thing as finally","no, finally must come before except","yes"],
+        "correct_answer":"no, finally cannot be used with except"
+    },
+ {
+        "id":72,
+        "qusetion":" ' Is the following Python code valid? try:  # Do something except:  # Do something else:  # Do something ' ",
+        "incorrect_answer":["no, there is no such thing as else","no, else cannot be used with except","no, else must come before except"],
+        "correct_answer":"yes"
+    },
+ {
+        "id":73,
+        "qusetion":" ' Can one block of except statements handle multiple exception? ' ",
+        "incorrect_answer":["yes, like except [TypeError, SyntaxError]","no","none of the mentioned"],
+        "correct_answer":"yes, like except TypeError, SyntaxError [,�] "
+    },
+ {
+        "id":74,
+        "qusetion":" ' When is the finally block executed? ' ",
+        "incorrect_answer":["when there is no exception","when there is an exception","only if some condition that has been specified is satisfied"],
+        "correct_answer":"always"
+    },
+ {
+        "id":75,
+        "qusetion":" ' What will be the output of the following Python code? def foo():  try:  print(1)  finally:  print(2) foo() ' ",
+        "incorrect_answer":["1","2","none of the mentioned"],
+        "correct_answer":"1 2"
+    }, {
+        "id":76,
+        "qusetion":" ' What will be the output of the following Python code? try:  if '1' != 1:  raise 'someError'  else:  print('someError has not occurred') except 'someError':  print ('someError has occurred') ' ",
+        "incorrect_answer":["someError has occurred","someError has not occurred","none of the mentioned"],
+        "correct_answer":"invalid code"
+    }, 
+{
+        "id":77,
+        "qusetion":" ' What happens when �1� == 1 is executed? ' ",
+        "incorrect_answer":["we get a True","an TypeError occurs","a ValueError occurs"],
+        "correct_answer":"we get a False"
+    }, 
+{
+        "id":78,
+        "qusetion":" ' What will be the output of the following Python code? x=10 y=8 assert x>y, 'X too small' ' ",
+        "incorrect_answer":["Assertion Error","10 8","108"],
+        "correct_answer":"No output"
+    },
+ {
+        "id":79,
+        "qusetion":" ' What will be the output of the following Python code? #generator def f(x):  yield x+1 g=f(8) print(next(g)) ' ",
+        "incorrect_answer":["8","7","Error"],
+        "correct_answer":"9"
+    }, 
+{
+        "id":80,
+        "qusetion":" ' What will be the output of the following Python code? def f(x):  yield x+1  print('test')  yield x+2 g=f(9) ' ",
+        "incorrect_answer":["test","Error"],
+        "correct_answer":"No output"
+    },
+ {
+        "id":81,
+        "qusetion":" ' What will be the output of the following Python code? def a():  try:  f(x, 4)  finally:  print('after f')  print('after f?') a() ' ",
+        "incorrect_answer":["after f?","after f","No output"],
+        "correct_answer":"error"
+    },
+ {
+        "id":82,
+        "qusetion":" ' The error displayed in the following Python code is? import itertools l1=(1, 2, 3) l2=[4, 5, 6] l=itertools.chain(l1, l2) print(next(l1)) ' ",
+        "incorrect_answer":["�list� object is not iterator","�list� object is iterator","�tuple� object is iterator"],
+        "correct_answer":"�tuple� object is not iterator"
+    }, 
+{
+        "id":83,
+        "qusetion":" ' What will be the output of the following Python code? g = (i for i in range(5)) type(g) ' ",
+        "incorrect_answer":["class <�loop�>","class <�iteration�>","class <�range�>"],
+        "correct_answer":"class <�generator�>"
+    }, 
+ {
+        "id":84,
+        "qusetion":" ' What will be the output of the following Python code? lst = [1, 2, 3] lst[3] ' ",
+        "incorrect_answer":["NameError","ValueError","TypeError"],
+        "correct_answer":"IndexErro"
+    },
+ {
+        "id":85,
+        "qusetion":" ' What will be the output of the following Python code, if the time module has already been imported? 4 + '3' ' ",
+        "incorrect_answer":["NameError","IndexError","ValueError"],
+        "correct_answer":"TypeError"
+    },
+ {
+        "id":86,
+        "qusetion":" ' What will be the output of the following Python code? int('65.43') ' ",
+        "incorrect_answer":["ImportError","TypeError","NameError"],
+        "correct_answer":"ValueError"
+    },
+ {
+        "id":87,
+        "qusetion":" ' What will be the output of the following Python code? def getMonth(m):  if m<1 or m>12:  raise ValueError('Invalid')  print(m) getMonth(6) ' ",
+        "incorrect_answer":["ValueError","Invalid","ValueError(�Invalid�)"],
+        "correct_answer":"6"
+    },
+ {
+        "id":88,
+        "qusetion":" ' Identify the type of error in the following Python codes? Print(�Good Morning�) print(�Good night) ' ",
+        "incorrect_answer":["Syntax, Syntax","Semantic, Semantic","Syntax, Semantic"],
+        "correct_answer":"Semantic, Syntax"
+    },
+ {
+        "id":89,
+        "qusetion":" ' Which of the following statements is true? ' ",
+        "incorrect_answer":["All raised standard exceptions must be handled in Python","When there is a deviation from the rules of a programming language, a semantic error is thrown","If any exception is thrown in try block, else block is executed"],
+        "correct_answer":"The standard exceptions are automatically imported into Python programs"
+    },
+ {
+        "id":90,
+        "qusetion":" ' Which of the following is not a standard exception in Python? ' ",
+        "incorrect_answer":["NameError","IOError","ValueError"],
+        "correct_answer":"AssignmentError"
+    },
+    { "id":90,
+        "qusetion":" ' What will be the output of the following Python code? x = [34, 56] print((''.join(list(map(str, x)))),) ' ", 
+        "incorrect_answer":["(3456)","(�3456�)","(�3456�,)" ],
+        "correct_answer":"3456" 
+    },
+
+    { "id":91,
+        "qusetion":" ' What will be the output of the following Python code? x = [34, 56] print(len(map(str, x))) ' ", 
+        "incorrect_answer":["[34, 56]","[�34�, �56�]","34 56" ],
+        "correct_answer":"error" 
+    },
+
+    { "id":92,
+        "qusetion":" ' What will be the output of the following Python code? x = 'abcd' print(list(map(list, x))) ' ", 
+        "incorrect_answer":["[�a�, �b�, �c�, �d�]","[�abcd�]","none of the mentioned" ],
+        "correct_answer":"[[�a�], [�b�], [�c�], [�d�]]" 
+    },
+
+    { "id":93,
+        "qusetion":" ' What will be the output of the following Python code?  x = abcd print(list(map(list, x))) ' ", 
+        "incorrect_answer":["[�a�, �b�, �c�, �d�]","[�abcd�]","[[�a�], [�b�], [�c�], [�d�]]" ],
+        "correct_answer":"none of the mentioned" 
+    },
+
+    { "id":94,
+        "qusetion":" ' What will be the output of the following Python code? x = 1234 print(list(map(list, x))) ' ", 
+        "incorrect_answer":["[1, 2, 3, 4]","[1234]","[[1], [2], [3], [4]]","[[1], [2], [3], [4]]" ],
+        "correct_answer":"none of the mentioned" 
+    },
+
+    { "id":95,
+        "qusetion":" ' What will be the output of the following Python code? x = 1234  print(list(map(list, [x]))) ' ", 
+        "incorrect_answer":["[1, 2, 3, 4]","[1234]","Python code is neither compiled nor interpreted" ],
+        "correct_answer":"none of the mentioned" 
+    },
+
+    { "id":96,
+        "qusetion":" ' Is Python code compiled or interpreted? ' ", 
+        "incorrect_answer":["Python code is only compiled","Python code is only interpreted","" ],
+        "correct_answer":"Python code is both compiled and interpreted" 
+    },
+
+    { "id":97,
+        "qusetion":" ' Which of these is the denition for packages in Python? ' ", 
+        "incorrect_answer":["A set of programs making use of Python modules","A set of main modules","A number of les containing Python denitions and statements" ],
+        "correct_answer":"A folder of python modules" 
+    },
+
+   { "id":98,
+        "qusetion":" ' Which of these is false about a package? ' ", 
+        "incorrect_answer":["A package can have subfolders and modules","import folder.subfolder.mod1 imports packages","from folder.subfolder.mod1 import objects imports packages"],
+        "correct_answer":"Each import package need not introduce a namespace" 
+    },
+
+    { "id":99,
+        "qusetion":" ' What will be the output of the following Python code? elements = [0, 1, 2]   def incr(x):  return x+1  print(list(map(incr, elements))) ' ", 
+        "incorrect_answer":["[0, 1, 2]","error","none of the mentioned" ],
+        "correct_answer":"[1, 2, 3]" 
+    },
+
+    { "id":100,
+        "qusetion":" ' What will be the output of the following Python code? x = ['ab', 'cd']  print(list(map(upper, x))) ' ", 
+        "incorrect_answer":["[�AB�, �CD�]","[�ab�, �cd�]","none of the mentioned" ],
+        "correct_answer":"error" 
+    },
+
+    { "id":101,
+        "qusetion":" ' What will be the output of the following Python code? def to_upper(k):  return k.upper()  x = ['ab', 'cd']  print(list(map(upper, x))) ' ", 
+        "incorrect_answer":["[�ab�, �cd�]","none of the mentioned","error" ],
+        "correct_answer":"[�AB�, �CD�]" 
+    },
+
+    { "id":102,
+        "qusetion":" ' What will be the output of the following Python code? def to_upper(k):  k.upper()   x = ['ab', 'cd']   print(list(map(to_upper, x))) ' ", 
+        "incorrect_answer":["[�AB�, �CD�]","[�ab�, �cd�]" ],
+        "correct_answer":"none of the mentioned" 
+    },
+
+    { "id":103,
+        "qusetion":" ' What will be the output of the following Python code? x= ['ab', 'cd']  print(map(len, x)) ' ", 
+        "incorrect_answer":["[�ab�, �cd�]","[2, 2]","[�2�, �2�]" ],
+        "correct_answer":"none of the mentioned" 
+    },
+
+    { "id":104,
+        "qusetion":" ' What will be the output of the following Python code?  x = ['ab', 'cd']  print(list(map(len, x))) ' ", 
+        "incorrect_answer":["[�ab�, �cd�]","[�2�, �2�]","none of the mentioned" ],
+        "correct_answer":"[2, 2]" 
+    },
+
+    { "id":105,
+        "qusetion":" ' What will be the output of the following Python code?  x = ['ab', 'cd']  print(len(map(list, x))) ' ", 
+        "incorrect_answer":["[2, 2]","2","4" ],
+        "correct_answer":"none of the mentioned" 
+    },
+
+    { "id":106,
+        "qusetion":" ' What will be the output of the following Python code? x = ['ab', 'cd']   print(len(list(map(list, x)))) ' ", 
+        "incorrect_answer":["4","error","none of the mentioned" ],
+        "correct_answer":"2" 
+    },
+
+    { "id":107,
+        "qusetion":" ' Which are the two built-in functions to read a line of text from standard input, which by default comes from the keyboard? ' ", 
+        "incorrect_answer":["Input & Scan","Scan & Scanner","Scan & Scanner" ],
+        "correct_answer":"Raw_input & Input" 
+    },
+
+    { "id":108,
+        "qusetion":" ' What will be the output of the following Python code? ' ", 
+        "incorrect_answer":["Enter your input: Hello Python Received input is :  Hello","Enter your input: Hello Python Received input is :  Python","None of the mentioned" ],
+        "correct_answer":"Enter your input: Hello Python Received input is :  Hello Python" 
+    },
+
+    { "id":109,
+        "qusetion":" ' What will be the output of the following Python code? 1. str = input('Enter your input: '); 2. print 'Received input is : ', str ' ", 
+        "incorrect_answer":["Enter your input: [x*5 for x in range(2,10,2)]  Received input is :  [10, 30, 20, 40]","Enter your input: [x*5 for x in range(2,10,2)]  Received input is :  [10, 10, 30, 40]","None of the mentioned" ],
+        "correct_answer":"Enter your input: [x*5 for x in range(2,10,2)]  Received input is :  [x*5 for x in range(2,10,2)]" 
+    },
+
+    { "id":110,
+        "qusetion":" ' Which one of the following is not attributes of le? ' ", 
+        "incorrect_answer":["closed","softspace","mode" ],
+        "correct_answer":"rename" 
+    },
+
+    { "id":111,
+        "qusetion":" ' What is the use of tell() method in python? ' ", 
+        "incorrect_answer":["tells you the end position within the file","tells you the file is opened or not","none of the mentioned" ],
+        "correct_answer":"tells you the current position within the file" 
+    },
+
+    { "id":112,
+        "qusetion":" ' What is the current syntax of rename() a le? ' ", 
+        "incorrect_answer":["rename(new_file_name, current_file_name,)","rename(()(current_file_name, new_file_name))","none of the mentioned" ],
+        "correct_answer":"rename(current_file_name, new_file_name)" 
+    },
+
+    { "id":113,
+        "qusetion":" ' What is the current syntax of remove() a le? ' ", 
+        "incorrect_answer":["remove(new_le_name, current_le_name,)","remove(() , file_name))","none of the mentioned" ],
+        "correct_answer":"remove(file_name)" 
+    },
+
+    { "id":114,
+        "qusetion":" ' What is the use of truncate() method in file?  ' ", 
+        "incorrect_answer":["deletes the content of the file","deletes the file size","none of the mentioned" ],
+        "correct_answer":"truncates the file size" 
+    },
+
+    { "id":115,
+        "qusetion":" ' What will be the output of the following Python code?  f=lambda x:bool(x%2)  print(f(20), f(21)) ' ", 
+        "incorrect_answer":["False False","True True","True False" ],
+        "correct_answer":"False True" 
+    },
+
+    { "id":116,
+        "qusetion":" ' What will be the output of the following Python code? import functools l=[1,2,3,4]  print(functools.reduce(lambda x,y:x*y,l)) ' ", 
+        "incorrect_answer":["Error","10","No output" ],
+        "correct_answer":"24" 
+    },
+
+    { "id":117,
+        "qusetion":" ' What will be the output of the following Python code? l=[1, -2, -3, 4, 5]   def f1(x): return x<2   m1=filter(f1, l)   print(list(m1)) ' ", 
+        "incorrect_answer":["[1, 4, 5 ]","Error","[-2, -3]" ],
+        "correct_answer":"[1, -2, -3]" 
+    },
+
+    { "id":118,
+        "qusetion":" ' What will be the output of the following Python code?  l=[-2, 4]   m=map(lambda x:x*2, l)  print(m) ' ", 
+        "incorrect_answer":["[-4, 16]","Error" ],
+        "correct_answer":"Address of m" 
+    },
+
+    { "id":119,
+        "qusetion":" ' What will be the output of the following Python code?  l=[1, -2, -3, 4, 5]   def f1(x): return x<-1  m1=map(f1, l)  print(list(m1)) ' ", 
+        "incorrect_answer":["[False, False, False, False, False]","[True, False, False, True, True]","[True, True, True, True, True]" ],
+        "correct_answer":"[False, True, True, False, False]" 
+    },
+
+    { "id":120,
+        "qusetion":" ' What will be the output of the following Python code?  l=[1, 2, 3, 4, 5]  m=map(lambda x:2**x, l) print(list(m)) ' ", 
+        "incorrect_answer":["[1, 4, 9, 16, 25 ]","[1, 0, 1, 0, 1]","Error" ],
+        "correct_answer":"[2, 4, 8, 16, 32 ]" 
+    },
+
+    { "id":121,
+        "qusetion":" ' What will be the output of the following Python code?  import functools l=[1, 2, 3, 4, 5]  m=functools.reduce(lambda x, y:x if x>y else y, l)     print(m)] ' ", 
+        "incorrect_answer":["Error","Address of m","1" ],
+        "correct_answer":"5" 
+    },
+
+    { "id":122,
+        "qusetion":" ' What will be the output of the following Python code? l=[n for n in range(5)] f=lambda x:bool(x%2)  print(f(3), f(1)) for i in range(len(l)): if f(l[i]):   del l[i]    print(i) ' ", 
+        "incorrect_answer":["False False 1 2","True False 1 2  Error","False True  1 2" ],
+        "correct_answer":"True True 1 2 Error" 
+    },
+
+    { "id":123,
+        "qusetion":" ' What will be the output of the following Python code?  m=reduce(lambda x: x-3 in range(4, 10))   print(list(m)) ' ", 
+        "incorrect_answer":["[1, 2, 3, 4, 5, 6, 7]","[1, 2, 3, 4, 5, 6]","Error" ],
+        "correct_answer":"No output" 
+    },
+
+    { "id":124,
+        "qusetion":" ' Which of the following numbers will not be a part of the output list of the following Python code?  m=filter(sf, range(1, 31))   print(list(m)) ' ", 
+        "incorrect_answer":["1","29","6" ],
+        "correct_answer":"10" 
+    },
+
+    { "id":125,
+        "qusetion":" ' The single line equivalent of the following Python code?  l=[1, 2, 3, 4, 5] def f1(x):  return x<0  m1=filter(f1, l)  print(list(m1)) ' ", 
+        "incorrect_answer":["filter(lambda x, y: x<0, l)","filter(reduce x<0, l)","reduce(x: x<0, l)" ],
+        "correct_answer":"filter(lambda x:x<0, l)" 
+    },
+
+    { "id":126,
+        "qusetion":" ' What will be the output of the following Python code?  list(map((lambda x:x**2), filter((lambda x:x%2==0), range(10)))) ' ", 
+        "incorrect_answer":["[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]","Error","No output" ],
+        "correct_answer":"[0, 4, 16, 36, 64]" 
+    },
+
+    { "id":127,
+        "qusetion":" ' The output of the following codes are the same. [x**2 for x in range(10)]  list(map((lambda x:x**2), range(10))) ' ", 
+        "incorrect_answer":["False"],
+        "correct_answer":"True" 
+    },
+
+    { "id":128,
+        "qusetion":" ' To open a le c:\\scores.txt for reading, we use _____________ ' ", 
+        "incorrect_answer":["infile = open(�c:\\scores.txt�, �r�)","infile = open(file = �c:\\scores.txt�, �r�)","infile = open(file = �c:\\scores.txt�, �r�)" ],
+        "correct_answer":"infile = open(�c:\\scores.txt�, �r�)" 
+    },
+
+    { "id":129,
+        "qusetion":" ' To open a le c:\\scores.txt for writing, we use ____________  ' ", 
+        "incorrect_answer":["outfile = open(�c:\\scores.txt�, �w�)","outfile = open(file = �c:\\scores.txt�, �w�)" ],
+        "correct_answer":"outfile = open(�c:\\scores.txt�, �w�)" 
+    },
+
+    { "id":130,
+        "qusetion":" ' To open a le c:\\scores.txt for appending data, we use ____________  ' ", 
+        "incorrect_answer":["outfile = open(�c:\\scores.txt�, �rw�)","outfile = open(file = �c:\\scores.txt�, �w�)","outfile = open(file = �c:\\scores.txt�, �w�)" ],
+        "correct_answer":"outfile = open(�c:\\scores.txt�, �a�)" 
+    },
+
+    { "id":131,
+        "qusetion":" ' Which of the following statements are true? ' ", 
+        "incorrect_answer":["When you open a file for reading, if the le does not exist, an error occurs","When you open a file for writing, if the file does not exist, a new file is created","When you open a file for writing, if the file exists, the existing file is overwritten with the new file" ],
+        "correct_answer":"All of the mentioned" 
+    },
+
+    { "id":132,
+        "qusetion":" ' To read the entire remaining contents of the le as a string from a le object inle, we use ____________ ' ", 
+        "incorrect_answer":["infile.read(2)","infile.readline()","infile.readlines()" ],
+        "correct_answer":"infile.read()" 
+    },
+
+    { "id":133,
+        "qusetion":" ' What will be the output of the following Python code?  1. f = None 2. for i in range (5): 3.     with open('data.txt', 'w') as f:  4.  if i > 2:  5.  break  6. print(f.closed) ' ", 
+        "incorrect_answer":["False","None","Error" ],
+        "correct_answer":"True" 
+    },
+
+    { "id":134,
+        "qusetion":" ' To read the remaining lines of the le from a le object inle, we use ____________ ' ", 
+        "incorrect_answer":["infile.read(2)","infile.read()","infile.readline()" ],
+        "correct_answer":"infile.readlines()" 
+    },
+
+    { "id":135,
+        "qusetion":" ' The readlines() method returns ____________  ' ", 
+        "incorrect_answer":["str","a list of single characters","a list of integers" ],
+        "correct_answer":"a list of lines" 
+    }
+]

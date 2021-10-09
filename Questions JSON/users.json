@@ -1,0 +1,44 @@
+[{
+  "_id": {
+    "$oid": "614f5691119f49752e7075db"
+  },
+  "username": "abd",
+  "email": "a@gmail.com",
+  "password": "12345",
+  "testsInfo": [
+    {
+      "result": "25"
+    },
+    {
+      "result": "25"
+    },
+    {
+      "result": "25"
+    },
+    {
+      "result": "78"
+    },
+    {
+      "result": "100"
+    },
+    {
+      "result": "100"
+    },
+    {
+      "result": "100"
+    },
+    {
+      "result": "56"
+    },
+    {
+      "result": "56"
+    },
+    {
+      "result": "78"
+    },
+    {
+      "result": "100"
+    }
+  ],
+  "__v": 0
+}]

@@ -1,0 +1,106 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+
+}
+
+.card {
+  max-width: 600px;
+  width: 70%;
+  /* height: 50%; */
+  text-align: center;
+  margin: 0 auto;
+}
+
+label.radio {
+  display: none;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+label.radio+.radio {
+  margin-left: 0;
+ 
+}
+
+#btn{
+  width: 30%;
+  margin: 30px auto;
+   
+
+}
+
+label.radio input {
+  margin-right: 10px;
+}
+ 
+.warn{
+  color: rgb(255, 255, 255);
+  font-family: monospace;
+  font-weight: bold;
+    margin-top: 15px;
+ 
+  background-color: rgb(231, 67, 67);
+}
+#notes{
+  text-align: left;
+}
+
+
+
+#withoutlimit{
+  background-color:#2e2e74
+}
+
+.A{
+   float:left;
+    margin-left:-20px;
+    color: white;
+}
+#prevresult{
+  display: block;
+  background-color: cadetblue;
+  border-radius: 18px;
+  list-style: none;
+  padding: 10px;
+}
+#logo{
+ 
+    font-size: 24px;
+    margin-left: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, monospace;
+    border: 2px solid ;
+    background-color: black;
+    color: white;
+     
+    padding: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 4px; 
+     
+
+    
+}
+#logo:hover{
+  color: black;
+  background-color: white;
+  cursor: pointer;
+
+  
+}
+#mark{
+  color: black;
+  font-weight: 900;
+  text-transform: capitalize;
+}

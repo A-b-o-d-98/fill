@@ -1,0 +1,1219 @@
+[{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1db1"
+  },
+  "id": 1,
+  "qusetion": " ' What will be the output of the following Python code ? x = ['ab', 'cd']  print(len(list(map(list, x)))))) ' ",
+  "incorrect_answer": [
+    "2",
+    "4",
+    "none of the mentioned",
+    "error",
+    "error"
+  ],
+  "correct_answer": "error"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1db2"
+  },
+  "id": 2,
+  "qusetion": " ' What will be the output of the following Python code?  x = ['ab', 'cd'] print(list(map(list, x))) ' ",
+  "incorrect_answer": [
+    "['a', 'b', 'c', 'd']",
+    "[['ab'], ['cd']]",
+    "none of the mentioned",
+    "[['a', 'b'], ['c', 'd']",
+    "[['a', 'b'], ['c', 'd']"
+  ],
+  "correct_answer": "[['a', 'b'], ['c', 'd']"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1db3"
+  },
+  "id": 3,
+  "qusetion": " ' What will be the output of the following Python code?  x = [12, 34]  print(len(''.join(list(map(int, x))))) ' ",
+  "incorrect_answer": [
+    "4",
+    "2",
+    "none of the mentioned",
+    "error",
+    "error"
+  ],
+  "correct_answer": "error"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1db4"
+  },
+  "id": 4,
+  "qusetion": " ' What will be the output of the following Python code? x = [12, 34]  print(len(''.join(list(map(str, x))))) ' ",
+  "incorrect_answer": [
+    "5",
+    "6",
+    "error",
+    "4",
+    "4"
+  ],
+  "correct_answer": "4"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1db5"
+  },
+  "id": 5,
+  "qusetion": " ' What will be the output of the following Python code?   x = [12, 34]  print(len(list(map(len, x)))) ' ",
+  "incorrect_answer": [
+    "2",
+    "1",
+    "none of the mentioned",
+    "error",
+    "error"
+  ],
+  "correct_answer": "error"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1db6"
+  },
+  "id": 6,
+  "qusetion": " ' What will be the output of the following Python code? x = [12, 34]  print(len(list(map(int, x)))) ' ",
+  "incorrect_answer": [
+    "1",
+    "error",
+    "none of the mentioned",
+    "2",
+    "2"
+  ],
+  "correct_answer": "2"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1db7"
+  },
+  "id": 7,
+  "qusetion": " ' What will be the output of the following Python code? x = [12.1, 34.0]  print(len(' '.join(list(map(str, x))))) ' ",
+  "incorrect_answer": [
+    "6",
+    "8",
+    "error",
+    "9",
+    "9"
+  ],
+  "correct_answer": "9"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1db8"
+  },
+  "id": 8,
+  "qusetion": " ' What will be the output of the following Python code? x = [12.1, 34.0]  print(' '.join(list(map(str, x)))) ' ",
+  "incorrect_answer": [
+    "12 1 34 0",
+    "12.1 34",
+    "121 340",
+    "12.1 34.0",
+    "12.1 34.0"
+  ],
+  "correct_answer": "12.1 34.0"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1db9"
+  },
+  "id": 9,
+  "qusetion": " ' The output of the following two Python codes are the same. CODE 1 >>> re.split(r'(a)(t)', 'The night sky') - CODE 2  >>> re.split(r'//s+', 'The night sky') ' ",
+  "incorrect_answer": [
+    "True",
+    "False",
+    "False"
+  ],
+  "correct_answer": "False"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dba"
+  },
+  "id": 10,
+  "qusetion": " ' What will be the output of the following Python code?  import re  s = 'abc123 xyz666 lmn-11 def77'   re.sub(r'\b([a-z]+)(\\d+)', r'\\2\\1:', s) ' ",
+  "incorrect_answer": [
+    "''77def: lmn-11: 666xyz: 123abc'",
+    "'abc123:', 'xyz666:', 'lmn-11:', 'def77:'",
+    "'abc123: xyz666: lmn-11: def77'",
+    "'123abc: 666xyz: lmn-11 77def:'"
+  ],
+  "correct_answer": "'123abc: 666xyz: lmn-11 77def:'"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dbb"
+  },
+  "id": 11,
+  "qusetion": " ' What will be the output of the following Python code?  re.subn('A', 'X', 'AAAAAA', count=4) ' ",
+  "incorrect_answer": [
+    "�XXXXAA, 4�",
+    "(�AAAAAA�, 4)",
+    "�AAAAAA, 4�",
+    "(�XXXXAA�, 4)",
+    "(�XXXXAA�, 4)"
+  ],
+  "correct_answer": "(�XXXXAA�, 4)"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dbc"
+  },
+  "id": 12,
+  "qusetion": " ' What will be the output of the following Python code? n = re.sub(r'\\w+', 'Hello', 'Cats and dogs') ' ",
+  "incorrect_answer": [
+    "Hello Hello  Hello",
+    "['Hello', 'Hello', 'Hello']",
+    "('Hello', 'Hello', 'Hello')",
+    "'Hello Hello Hello'"
+  ],
+  "correct_answer": "'Hello Hello Hello'"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dbd"
+  },
+  "id": 13,
+  "qusetion": " ' What will be the output of the following Python code? re.split(r'\\s+', 'Chrome is better than explorer', maxspilt=3 ' ",
+  "incorrect_answer": [
+    "[�Chrome�, �is�, �better�, �than�, �explorer�]",
+    "(�Chrome�, �is�, �better�, �than explorer�)",
+    "�Chrome is better� �than explorer�",
+    "[�Chrome�, �is�, �better�, �than explorer�]",
+    "[�Chrome�, �is�, �better�, �than explorer�]"
+  ],
+  "correct_answer": "[�Chrome�, �is�, �better�, �than explorer�]"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dbe"
+  },
+  "id": 14,
+  "qusetion": " ' The character Dot (that is, �.�) in the default mode, matches any character other than _____________ ' ",
+  "incorrect_answer": [
+    "caret",
+    "ampersand",
+    "percentage symbol",
+    "newline",
+    "newline"
+  ],
+  "correct_answer": "newline"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dbf"
+  },
+  "id": 15,
+  "qusetion": " ' ________ matches the start of the string.  ________ matches the end of the string.' ",
+  "incorrect_answer": [
+    "�$�, �^�",
+    "�$�, �?�",
+    "�?�, �^�",
+    "�^�, �$�",
+    "�^�, �$�"
+  ],
+  "correct_answer": "�^�, �$�"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dc0"
+  },
+  "id": 16,
+  "qusetion": " ' Which of the following will result in an error? ' ",
+  "incorrect_answer": [
+    ">>> p = re.compile('d')",
+    ">>> p = re.escape(�hello�)",
+    ">>> p = re.purge()",
+    ">>> p = re.subn()",
+    ">>> p = re.subn()"
+  ],
+  "correct_answer": ">>> p = re.subn()"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dc1"
+  },
+  "id": 17,
+  "qusetion": " ' What will be the output of the following Python code? re.split('\\W+', 'Hello, hello, hello.') ' ",
+  "incorrect_answer": [
+    "[�Hello�, �hello�, �hello.�]",
+    "[�Hello, �hello�, �hello�]",
+    "[�Hello�, �hello�, �hello�, �.�]",
+    "[�Hello�, �hello�, �hello�, �]",
+    "[�Hello�, �hello�, �hello�, �]"
+  ],
+  "correct_answer": "[�Hello�, �hello�, �hello�, �]"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dc2"
+  },
+  "id": 18,
+  "qusetion": " ' What will be the output of the following Python function?re.findall('hello world', 'hello', 1) ' ",
+  "incorrect_answer": [
+    "[�hello�]",
+    "hello",
+    "hello world",
+    "[ ]",
+    "[ ]"
+  ],
+  "correct_answer": "[ ]"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dc3"
+  },
+  "id": 19,
+  "qusetion": " ' Choose the function whose output can be: <_sre.SRE_Match object; span=(4, 8), match=�aaaa�>. ' ",
+  "incorrect_answer": [
+    ">>> re.match('aaaa', 'alohaaaa', 0)",
+    ">>> re.match('aaa', 'alohaaa', 0)",
+    ">>> re.search('aaa', 'alohaaa', 0)",
+    ">>> re.search('aaaa', 'alohaaaa', 0)"
+  ],
+  "correct_answer": ">>> re.search('aaaa', 'alohaaaa', 0)"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dc4"
+  },
+  "id": 20,
+  "qusetion": " ' Which of the following functions clears the regular expression cache? ' ",
+  "incorrect_answer": [
+    "re.sub()",
+    "re.pos()",
+    "re.subn()",
+    "re.purge()",
+    "re.purge()"
+  ],
+  "correct_answer": "re.purge()"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dc5"
+  },
+  "id": 21,
+  "qusetion": " ' What will be the output of the following Python code? import re re.ASCII ' ",
+  "incorrect_answer": [
+    "8",
+    "32",
+    "64",
+    "256",
+    "256"
+  ],
+  "correct_answer": "256"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dc6"
+  },
+  "id": 22,
+  "qusetion": " ' What will be the output of the following Python code? re.split(r'(n\\d)=', 'n1=3.1, n2=5, n3=4.565') ' ",
+  "incorrect_answer": [
+    "Error",
+    "[�n1�, �3.1, �, �n2�, �5, �, �n3�, �4.565�]",
+    "[�3.1, �, �5, �, �4.565�]",
+    "[�, �n1�, �3.1, �, �n2�, �5, �, �n3�, �4.565�]",
+    "[�, �n1�, �3.1, �, �n2�, �5, �, �n3�, �4.565�]"
+  ],
+  "correct_answer": "[�, �n1�, �3.1, �, �n2�, �5, �, �n3�, �4.565�]"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dc7"
+  },
+  "id": 23,
+  "qusetion": " ' The function of re.search is __________ ' ",
+  "incorrect_answer": [
+    "Matches a pattern at the start of the string",
+    "Matches a pattern at the end of the string",
+    "Such a function does not exist",
+    "Matches a pattern from any part of a string",
+    "Matches a pattern from any part of a string"
+  ],
+  "correct_answer": "Matches a pattern from any part of a string"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dc8"
+  },
+  "id": 24,
+  "qusetion": " ' Which of the following functions creates a Python object? ' ",
+  "incorrect_answer": [
+    "re.assemble(str)",
+    "re.regex(str)",
+    "re.create(str)",
+    "re.compile(str)",
+    "re.compile(str)"
+  ],
+  "correct_answer": "re.compile(str)"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dc9"
+  },
+  "id": 25,
+  "qusetion": " ' Which of the following pattern matching modiers permits whitespace and comments inside the regular expression? ' ",
+  "incorrect_answer": [
+    "re.L",
+    "re.S",
+    "re.U",
+    "re.X",
+    "re.X"
+  ],
+  "correct_answer": "re.X"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dca"
+  },
+  "id": 26,
+  "qusetion": " ' What will be the output of the following Python code?  s = 'welcome home'  m = re.match(r'(.*)(.*?)', s)  print(m.group()) ' ",
+  "incorrect_answer": [
+    "(�welcome�, �home�)",
+    "[�welcome�, �home�]",
+    "[�welcome� // �home� ]",
+    "welcome home",
+    "welcome home"
+  ],
+  "correct_answer": "welcome home"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dcb"
+  },
+  "id": 27,
+  "qusetion": " ' The function of re.match is ____________ ' ",
+  "incorrect_answer": [
+    "Error",
+    "Matches a pattern anywhere in the string",
+    "Matches a pattern at the end of the string",
+    "Matches a pattern at the start of the string",
+    "Matches a pattern at the start of the string"
+  ],
+  "correct_answer": "Matches a pattern at the start of the string"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dcc"
+  },
+  "id": 28,
+  "qusetion": " '  Which of the following special characters matches a pattern only at the end of the string? ' ",
+  "incorrect_answer": [
+    "\\B",
+    "\\X",
+    "\\A",
+    "\\Z",
+    "\\Z"
+  ],
+  "correct_answer": "\\Z"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dcd"
+  },
+  "id": 29,
+  "qusetion": " ' The output of the following two Python codes are the same. p = re.compile('hello')  r = p.match('hello everyone')  print(r.group(0)) r = re.match('hello', 'hello everyone') print(r.group(0)) ' ",
+  "incorrect_answer": [
+    "False",
+    "True",
+    "True"
+  ],
+  "correct_answer": "True"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dce"
+  },
+  "id": 30,
+  "qusetion": " ' Which of the following special characters represents a comment (that is, the contents of the parenthesis are simply ignores)? ' ",
+  "incorrect_answer": [
+    "(?:�)",
+    "(?=�)",
+    "(?!�)",
+    "(?#�)",
+    "(?#�)"
+  ],
+  "correct_answer": "(?#�)"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dcf"
+  },
+  "id": 31,
+  "qusetion": " ' Which of the codes shown below results in a match? ' ",
+  "incorrect_answer": [
+    "re.match(�George(?=Washington)�, �George Washington�)",
+    "re.match(�George(?=Washington)�, �George�",
+    "re.match(�George(?=Washington)�, �Georgewashington�)",
+    "re.match(�George(?=Washington)�, �GeorgeWashington�)",
+    "re.match(�George(?=Washington)�, �GeorgeWashington�)"
+  ],
+  "correct_answer": "re.match(�George(?=Washington)�, �GeorgeWashington�)"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dd0"
+  },
+  "id": 32,
+  "qusetion": " ' What will be the output of the following Python code?re.compile('hello', re.X) ' ",
+  "incorrect_answer": [
+    "[�h�, �e�, �l�, �l�, �o�]",
+    "Error",
+    "Junk value",
+    "re.compile(�hello�, re.VERBOSE)",
+    "re.compile(�hello�, re.VERBOSE)"
+  ],
+  "correct_answer": "re.compile(�hello�, re.VERBOSE)"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dd1"
+  },
+  "id": 33,
+  "qusetion": " ' What will be the output of the following Python code? re.split('[a-c]', '0a3B6', re.I) ' ",
+  "incorrect_answer": [
+    "Error",
+    "[�a�, �B�]",
+    "[�a�]",
+    "[�0�, �3B6�]",
+    "[�0�, �3B6�]"
+  ],
+  "correct_answer": "[�0�, �3B6�]"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dd2"
+  },
+  "id": 34,
+  "qusetion": " ' What will be the output of the following Python code? re.sub('morning', 'evening', 'good morning') ' ",
+  "incorrect_answer": [
+    "�good�",
+    "�morning�",
+    "�evening�",
+    "�good evening�",
+    "�good evening�"
+  ],
+  "correct_answer": "�good evening�"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dd3"
+  },
+  "id": 35,
+  "qusetion": " ' The function re.error raises an exception if a particular string contains no match for the given pattern. ' ",
+  "incorrect_answer": [
+    "True",
+    "False",
+    "False"
+  ],
+  "correct_answer": "False"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dd4"
+  },
+  "id": 36,
+  "qusetion": " ' What will be the output of the following Python code? re.escape('new**world') ' ",
+  "incorrect_answer": [
+    "�new world�",
+    "�**�",
+    "�new�, �*�, �*�, �world�",
+    "�new\\*\\*world�",
+    "�new\\*\\*world�"
+  ],
+  "correct_answer": "�new\\*\\*world�"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dd5"
+  },
+  "id": 37,
+  "qusetion": " ' What will be the output of the following Python code? re.fullmatch('hello', 'hello world') ' ",
+  "incorrect_answer": [
+    "[]",
+    "<_sre.SRE_Match object; span=(0, 5), match='hello'>",
+    "Error",
+    "No output",
+    "No output"
+  ],
+  "correct_answer": "No output"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dd6"
+  },
+  "id": 38,
+  "qusetion": " ' The dierence between the functions re.sub and re.subn is that re.sub returns a _______________ whereas re.subn returns a __________________ ' ",
+  "incorrect_answer": [
+    "string, list",
+    "list, tuple",
+    "tuple, list",
+    "string, tuple",
+    "string, tuple"
+  ],
+  "correct_answer": "string, tuple"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dd7"
+  },
+  "id": 39,
+  "qusetion": " ' What will be the output of the following Python code? re.split('mum', 'mumbai*', 1) ' ",
+  "incorrect_answer": [
+    "Error",
+    "[�, �bai�]",
+    "[�bai*�]",
+    "[�, �bai*�]",
+    "[�, �bai*�]"
+  ],
+  "correct_answer": "[�, �bai*�]"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dd8"
+  },
+  "id": 40,
+  "qusetion": " ' Which of the following functions returns a dictionary mapping group names to group numbers? ' ",
+  "incorrect_answer": [
+    "re.compile.group",
+    "re.compile.index",
+    "re.compile.indexgroup",
+    "re.compile.groupindex",
+    "re.compile.groupindex"
+  ],
+  "correct_answer": "re.compile.groupindex"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dd9"
+  },
+  "id": 41,
+  "qusetion": " ' The following Python code snippet results in an error.  c=re.compile(r'(\\d+)(\\[A-Z]+)([a-z]+)')  c.groupindex ' ",
+  "incorrect_answer": [
+    "True",
+    "False",
+    "False"
+  ],
+  "correct_answer": "False"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dda"
+  },
+  "id": 42,
+  "qusetion": " ' Which of the following functions does not accept any argument? ' ",
+  "incorrect_answer": [
+    "re.compile",
+    "re.ndall",
+    "re.match",
+    "re.purge",
+    "re.purge"
+  ],
+  "correct_answer": "re.purge"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1ddb"
+  },
+  "id": 43,
+  "qusetion": " ' Which of the following lines of code will not show a match? ' ",
+  "incorrect_answer": [
+    ">>> re.match(�ab*�, �a�)",
+    ">>> re.match(�ab*�, �ab�)",
+    ">>> re.match(�ab*�, �abb�)",
+    ">>> re.match(�ab*�, �ba�)",
+    ">>> re.match(�ab*�, �ba�)"
+  ],
+  "correct_answer": ">>> re.match(�ab*�, �ba�)"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1ddc"
+  },
+  "id": 44,
+  "qusetion": " ' What will be the output of the following Python code? ' ",
+  "incorrect_answer": [
+    "{}",
+    "�The blue umbrella�",
+    "No output",
+    "�a�",
+    "�a�"
+  ],
+  "correct_answer": "�a�"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1ddd"
+  },
+  "id": 45,
+  "qusetion": " ' What will be the output of the following Python code?  re.sub('Y', 'X', 'AAAAAA', count=2) ' ",
+  "incorrect_answer": [
+    "�YXAAAA�",
+    "(�YXAAAA�)",
+    "(�AAAAAA�)",
+    "�AAAAAA�",
+    "�AAAAAA�"
+  ],
+  "correct_answer": "�AAAAAA�"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dde"
+  },
+  "id": 46,
+  "qusetion": " ' Which module in Python supports regular expressions? ' ",
+  "incorrect_answer": [
+    "regex",
+    "pyregex",
+    "none of the mentioned",
+    "re",
+    "re"
+  ],
+  "correct_answer": "re"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1ddf"
+  },
+  "id": 47,
+  "qusetion": " ' What does the function re.match do? ' ",
+  "incorrect_answer": [
+    "matches a pattern at any position in the string",
+    "such a function does not exist",
+    "none of the mentioned",
+    "matches a pattern at the start of the string",
+    "matches a pattern at the start of the string"
+  ],
+  "correct_answer": "matches a pattern at the start of the string"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1de0"
+  },
+  "id": 48,
+  "qusetion": " ' What does the function re.search do? ' ",
+  "incorrect_answer": [
+    "matches a pattern at the start of the string",
+    "such a function does not exist",
+    "none of the mentioned",
+    "matches a pattern at any position in the string",
+    "matches a pattern at any position in the string"
+  ],
+  "correct_answer": "matches a pattern at any position in the string"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1de1"
+  },
+  "id": 49,
+  "qusetion": " ' What will be the output of the following Python code? sentence = 'we are humans' matched = re.match(r'(.*) (.*?) (.*)', sentence)                     print(matched.groups()) ' ",
+  "incorrect_answer": [
+    "(we, are, humans)",
+    "(�we�, �humans�)",
+    "�we are humans�",
+    "(�we�, �are�, �humans�)",
+    "(�we�, �are�, �humans�)"
+  ],
+  "correct_answer": "(�we�, �are�, �humans�)"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1de2"
+  },
+  "id": 50,
+  "qusetion": " ' What will be the output of the following Python code? sentence = 'we are humans'  matched = re.match(r'(.*) (.*?) (.*)', sentence)                      print(matched.group()) ' ",
+  "incorrect_answer": [
+    "(�we�, �are�, �humans�)",
+    "(we, are, humans)",
+    "(�we�, �humans�)",
+    "�we are humans�",
+    "�we are humans�"
+  ],
+  "correct_answer": "�we are humans�"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1de3"
+  },
+  "id": 51,
+  "qusetion": " ' What will be the output of the following Python code? sentence = 'horses are fast'  regex = re.compile('(?P<animal>\\w+) (?P<verb>\\w+) (?P<adjective>\\w+)')    matched = re.search(regex, sentence)   print(matched.groupdict()) ' ",
+  "incorrect_answer": [
+    "(�horses�, �are�, �fast�)",
+    "�horses are fast�",
+    "�are�",
+    "{�animal�: �horses�, �verb�: �are�, �adjective�: �fast�}",
+    "{�animal�: �horses�, �verb�: �are�, �adjective�: �fast�}"
+  ],
+  "correct_answer": "{�animal�: �horses�, �verb�: �are�, �adjective�: �fast�}"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1de4"
+  },
+  "id": 52,
+  "qusetion": " ' What will be the output of the following Python code? sentence = 'horses are fast' regex = re.compile('(?P<animal>\\w+) (?P<verb>\\w+) (?P<adjective>\\w+)')  matched = re.search(regex, sentence) print(matched.groups() ' ",
+  "incorrect_answer": [
+    "{�animal�: �horses�, �verb�: �are�, �adjective�: �fast�}",
+    "�horses are fast�",
+    "�are�",
+    "(�horses�, �are�, �fast�)",
+    "(�horses�, �are�, �fast�)"
+  ],
+  "correct_answer": "(�horses�, �are�, �fast�)"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1de5"
+  },
+  "id": 53,
+  "qusetion": " ' Which of the following is not a valid mode to open a le? ' ",
+  "incorrect_answer": [
+    "ab",
+    "r+",
+    "w+",
+    "rw",
+    "rw"
+  ],
+  "correct_answer": "rw"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1de6"
+  },
+  "id": 54,
+  "qusetion": " ' How do you get the name of a le from a le object (fp)? ' ",
+  "incorrect_answer": [
+    "fp.le(name)",
+    "self.__name__(fp)",
+    "fp.__name__()",
+    "fp.name",
+    "fp.name"
+  ],
+  "correct_answer": "fp.name"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1de7"
+  },
+  "id": 55,
+  "qusetion": " ' Which of the following is not a valid attribute of a le object (fp)? ' ",
+  "incorrect_answer": [
+    "fp.name",
+    "fp.closed",
+    "fp.mode",
+    "fp.size",
+    "fp.size"
+  ],
+  "correct_answer": "fp.size"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1de8"
+  },
+  "id": 56,
+  "qusetion": " ' How do you close a le object (fp)? ' ",
+  "incorrect_answer": [
+    "close(fp)",
+    "fclose(fp)",
+    "fp.__close__()",
+    "fp.close()",
+    "fp.close()"
+  ],
+  "correct_answer": "fp.close()"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1de9"
+  },
+  "id": 57,
+  "qusetion": " ' How do you get the current position within the le? ' ",
+  "incorrect_answer": [
+    "fp.seek()",
+    "fp.loc",
+    "fp.pos",
+    "fp.tell()",
+    "fp.tell()"
+  ],
+  "correct_answer": "fp.tell()"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dea"
+  },
+  "id": 58,
+  "qusetion": " ' How do you rename a le? ' ",
+  "incorrect_answer": [
+    "fp.name = �new_name.txt�",
+    "os.rename(fp, new_name)",
+    "os.set_name(existing_name, new_name)",
+    "os.rename(existing_name, new_name)",
+    "os.rename(existing_name, new_name)"
+  ],
+  "correct_answer": "os.rename(existing_name, new_name)"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1deb"
+  },
+  "id": 59,
+  "qusetion": " ' How do you delete a le? '  ",
+  "incorrect_answer": [
+    "del(fp)",
+    "fp.delete()",
+    "os.delete(�le�)",
+    "os.remove(�le�)",
+    "os.remove(�le�)"
+  ],
+  "correct_answer": "os.remove(�le�)"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dec"
+  },
+  "id": 60,
+  "qusetion": " ' How do you change the le position to an oset value from the start? ' ",
+  "incorrect_answer": [
+    "fp.seek(oset, 1)",
+    "fp.seek(oset, 2)",
+    "none of the mentioned",
+    "fp.seek(oset, 0)",
+    "fp.seek(oset, 0)"
+  ],
+  "correct_answer": "fp.seek(oset, 0)"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1ded"
+  },
+  "id": 61,
+  "qusetion": " ' What happens if no arguments are passed to the seek function? ' ",
+  "incorrect_answer": [
+    "le position is set to the start of le",
+    "le position is set to the end of le",
+    "le position remains unchanged",
+    "error",
+    "error"
+  ],
+  "correct_answer": "error"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dee"
+  },
+  "id": 62,
+  "qusetion": " ' Which is/are the basic I/O connections in le? ' ",
+  "incorrect_answer": [
+    "Standard Input",
+    "Standard Output",
+    "Standard Errors",
+    "All of the mentioned",
+    "All of the mentioned"
+  ],
+  "correct_answer": "All of the mentioned"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1def"
+  },
+  "id": 63,
+  "qusetion": " ' What will be the output of the following   1. import sys  2. sys.stdout.write(' Hello\n')  3. sys.stdout.write('Python\n') ' ",
+  "incorrect_answer": [
+    "Compilation Error",
+    "Runtime Error",
+    "Hello Python",
+    "Hello Python",
+    "Hello Python"
+  ],
+  "correct_answer": "Hello Python"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1df0"
+  },
+  "id": 64,
+  "qusetion": " ' Which of the following mode will refer to binary data? ' ",
+  "incorrect_answer": [
+    "r",
+    "w",
+    "+",
+    "b",
+    "b"
+  ],
+  "correct_answer": "b"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1df1"
+  },
+  "id": 65,
+  "qusetion": " ' What is the pickling? ' ",
+  "incorrect_answer": [
+    "It is used for object deserialization",
+    "None of the mentioned",
+    "All of the mentioned",
+    "It is used for object serialization",
+    "It is used for object serialization"
+  ],
+  "correct_answer": "It is used for object serialization"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1df2"
+  },
+  "id": 66,
+  "qusetion": " ' What is unpickling? ' ",
+  "incorrect_answer": [
+    "It is used for object serialization",
+    "None of the mentioned",
+    "All of the mentioned",
+    "It is used for object deserialization",
+    "It is used for object deserialization"
+  ],
+  "correct_answer": "It is used for object deserialization"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1df3"
+  },
+  "id": 67,
+  "qusetion": " ' What is the correct syntax of open() function? ' ",
+  "incorrect_answer": [
+    "le = open(le_name [, access_mode][, buering])",
+    "le object = open(le_name)",
+    "none of the mentioned",
+    "le object = open(le_name [, access_mode][, buering])",
+    "le object = open(le_name [, access_mode][, buering])"
+  ],
+  "correct_answer": "le object = open(le_name [, access_mode][, buering])"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1df4"
+  },
+  "id": 68,
+  "qusetion": " ' Correct syntax of le.writelines() is? ' ",
+  "incorrect_answer": [
+    "le.writelines(sequence)",
+    "leObject.writelines()",
+    "none of the mentioned",
+    "leObject.writelines(sequence)",
+    "leObject.writelines(sequence)"
+  ],
+  "correct_answer": "leObject.writelines(sequence)"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1df5"
+  },
+  "id": 69,
+  "qusetion": " ' In le handling, what does this terms means �r, a�? ' ",
+  "incorrect_answer": [
+    "append, read",
+    "write, append",
+    "none of the mentioned",
+    "read, append",
+    "read, append"
+  ],
+  "correct_answer": "read, append"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1df6"
+  },
+  "id": 70,
+  "qusetion": " ' What is the use of �w� in le handling? ' ",
+  "incorrect_answer": [
+    "Read",
+    "Append",
+    "Write",
+    "Write"
+  ],
+  "correct_answer": "Write"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1df7"
+  },
+  "id": 71,
+  "qusetion": " ' What is the use of �a� in le handling? ' ",
+  "incorrect_answer": [
+    "Read",
+    "Write",
+    "None of the mentioned",
+    "Append",
+    "Append"
+  ],
+  "correct_answer": "Append"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1df8"
+  },
+  "id": 72,
+  "qusetion": " ' Which function is used to read all the characters? ' ",
+  "incorrect_answer": [
+    "Readcharacters()",
+    "Readall()",
+    "Readchar()",
+    "Read()",
+    "Read()"
+  ],
+  "correct_answer": "Read()"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1df9"
+  },
+  "id": 73,
+  "qusetion": " ' Which function is used to read single line from le? ' ",
+  "incorrect_answer": [
+    "Readline()",
+    "Readstatement()",
+    "Readfullline()",
+    "Readlines()",
+    "Readlines()"
+  ],
+  "correct_answer": "Readlines()"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dfa"
+  },
+  "id": 74,
+  "qusetion": " ' Which function is used to write all the characters? ' ",
+  "incorrect_answer": [
+    "writecharacters()",
+    "writeall()",
+    "writechar()",
+    "write()",
+    "write()"
+  ],
+  "correct_answer": "write()"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dfb"
+  },
+  "id": 75,
+  "qusetion": " ' Which function is used to close a le in python? ' ",
+  "incorrect_answer": [
+    "Stop()",
+    "End()",
+    "Closele()",
+    "Close()",
+    "Close()"
+  ],
+  "correct_answer": "Close()"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dfc"
+  },
+  "id": 76,
+  "qusetion": " ' Which of the following are the modes of both writing and reading in binary format in le? ' ",
+  "incorrect_answer": [
+    "w",
+    "wb",
+    "w+",
+    "wb+",
+    "wb+"
+  ],
+  "correct_answer": "wb+"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dfd"
+  },
+  "id": 77,
+  "qusetion": " ' Which of these denitions correctly describes a module? ' ",
+  "incorrect_answer": [
+    "Denoted by triple quotes for providing the specication of certain program elements",
+    "Denes the specication of how it is to be used",
+    "Any program that reuses code",
+    "Design and implementation of specic functionality to be incorporated into a program",
+    "Design and implementation of specic functionality to be incorporated into a program"
+  ],
+  "correct_answer": "Design and implementation of specic functionality to be incorporated into a program"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dfe"
+  },
+  "id": 78,
+  "qusetion": " ' Program code making use of a given module is called a ______ of the module. ' ",
+  "incorrect_answer": [
+    "Docstring",
+    "Interface",
+    "Modularity",
+    "Client",
+    "Client"
+  ],
+  "correct_answer": "Client"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1dff"
+  },
+  "id": 79,
+  "qusetion": " ' Which of the following is true about top-down design process? ' ",
+  "incorrect_answer": [
+    "The details of a program design are addressed before the overall design",
+    "Only the details of the program are addressed",
+    "Only the design of the program is addressed",
+    "The overall design of the program is addressed before the details",
+    "The overall design of the program is addressed before the details"
+  ],
+  "correct_answer": "The overall design of the program is addressed before the details"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1e00"
+  },
+  "id": 80,
+  "qusetion": " ' In top-down design every module is broken into same number of submodules. ' ",
+  "incorrect_answer": [
+    "True",
+    "False",
+    "False"
+  ],
+  "correct_answer": "False"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1e01"
+  },
+  "id": 81,
+  "qusetion": " ' What will be the output of the following Python code ? #mod1  def change(a): b=[x*2 for x in a]  print(b)  #mod2  def change(a):  b=[x*x for x in a] print(b) from mod1 import change  from mod2 import change  #main   s=[1,2,3]  change(s) ' ",
+  "incorrect_answer": [
+    "[2,4,6]",
+    "[1,4,9]",
+    "[2,4,6]  [1,4,9]",
+    "There is a name clash",
+    "There is a name clash"
+  ],
+  "correct_answer": "There is a name clash"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1e02"
+  },
+  "id": 82,
+  "qusetion": " ' Which of the following isn�t true about main modules? ' ",
+  "incorrect_answer": [
+    "When a python le is directly executed, it is considered main module of a program",
+    "Main modules may import any number of modules",
+    "Special name given to main modules is: __main__",
+    "Other main modules can import main modules",
+    "Other main modules can import main modules"
+  ],
+  "correct_answer": "Other main modules can import main modules"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1e03"
+  },
+  "id": 83,
+  "qusetion": " ' Which of the following is not a valid namespace? ' ",
+  "incorrect_answer": [
+    "Global namespace",
+    "Built-in namespace",
+    "Local namespace",
+    "Public namespace",
+    "Public namespace"
+  ],
+  "correct_answer": "Public namespace"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1e04"
+  },
+  "id": 84,
+  "qusetion": " ' Which of the following is false about �from-import� form of import? ' ",
+  "incorrect_answer": [
+    "The syntax is: from modulename import identier",
+    "The namespace of imported module becomes part of importing module",
+    "The identiers in module are accessed directly as: identier",
+    "This form of import prevents name clash",
+    "This form of import prevents name clash"
+  ],
+  "correct_answer": "This form of import prevents name clash"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1e05"
+  },
+  "id": 85,
+  "qusetion": " ' Which of the statements about modules is false? ' ",
+  "incorrect_answer": [
+    "In the �from-import� form of import, identiers beginning with two underscores are private and aren�t imported",
+    "dir() built-in function monitors the items in the namespace of the main module",
+    "When a module is loaded, a compiled version of the module with le extension .pyc is automatically produced",
+    "In the �from-import� form of import, all identiers regardless of whether they are private or public are imported",
+    "In the �from-import� form of import, all identiers regardless of whether they are private or public are imported"
+  ],
+  "correct_answer": "In the �from-import� form of import, all identiers regardless of whether they are private or public are imported"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1e06"
+  },
+  "id": 86,
+  "qusetion": " ' What is the order of namespaces in which Python looks for an identier? ' ",
+  "incorrect_answer": [
+    "Python rst searches the global namespace, then the local namespace and nally the built-in namespace",
+    "Python rst searches the built-in namespace, then the global namespace and nally the local namespace",
+    "Python rst searches the built-in namespace, then the local namespace and nally the global namespace",
+    "Python rst searches the local namespace, then the global namespace and nally the built-in namespace",
+    "Python rst searches the local namespace, then the global namespace and nally the built-in namespace"
+  ],
+  "correct_answer": "Python rst searches the local namespace, then the global namespace and nally the built-in namespace"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1e07"
+  },
+  "id": 87,
+  "qusetion": " ' What will be the output of the following Python code? x = [[0], [1]]  print((' '.join(list(map(str, x))),)) ' ",
+  "incorrect_answer": [
+    "(�01�)",
+    "[0] [1]",
+    "01",
+    "(�[0] [1]�,)",
+    "(�[0] [1]�,)"
+  ],
+  "correct_answer": "(�[0] [1]�,)"
+},{
+  "_id": {
+    "$oid": "614f565245b7c41ae56e1e08"
+  },
+  "id": 88,
+  "qusetion": " ' What will be the output of the following Python code? x = [34, 56] print((''.join(list(map(str, x))),)) ' ",
+  "incorrect_answer": [
+    "3456",
+    "(3456)",
+    "(�3456�)",
+    "(�3456�,)",
+    "(�3456�,)"
+  ],
+  "correct_answer": "(�3456�,)"
+}]

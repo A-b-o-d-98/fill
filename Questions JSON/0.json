@@ -1,0 +1,932 @@
+[
+    {
+        "id":1,
+        "qusetion":" '. Is Python case sensitive when dealing with identifiers? ' ",
+        "incorrect_answer":["no","machine dependent"],
+        "correct_answer":" yes"
+    },
+
+    { "id":2,
+        "qusetion":" ' Which of the following is an invalid statement? ' ",
+        "incorrect_answer":[" abc = 1,000,000","a,b,c = 1000, 2000, 3000"],
+        "correct_answer":"a b c = 1000 2000 3000"
+    },
+    
+
+    { "id":3,
+        "qusetion":" ' Which of the following is an invalid variable? ' ",
+        "incorrect_answer":["my_string_1","foo"],
+        "correct_answer":"1st_string"
+    },
+{
+        "id":4,
+        "qusetion":" ' What is the output of print 0.1 + 0.2 == 0.3? ' ",
+        "incorrect_answer":["True","Error"],
+        "correct_answer":"False"
+    },
+{
+        "id":5,
+        "qusetion":" ' What does ~~~~~~5 evaluate to? ' ",
+        "incorrect_answer":["-11","+11"],
+        "correct_answer":"+5"
+    },
+
+
+    {
+        "id":6,
+        "qusetion":" ' Which of the following is incorrect? ' ",
+        "incorrect_answer":["float(�inf�)","float(�56�+�78�)"],
+        "correct_answer":"float(�12+34?)"
+    },
+
+    {
+        "id":7,
+        "qusetion":" ' What does 3 ^ 4 evaluate to? ' ",
+        "incorrect_answer":["81","0.75"],
+        "correct_answer":"7"
+    },
+
+    {
+        "id":8,
+        "qusetion":" ' Which of the following is incorrect? ' ",
+        "incorrect_answer":["x = 0b101","x = 0x4f5","x = 19023"],
+        "correct_answer":"x = 03964"
+    },
+
+    {
+        "id":9,
+        "qusetion":" ' What will be the output of the following Python code1. >>>str='hello'2. >>>str[:2]3. >>> ' " ,
+        "incorrect_answer":["lo","hello"],
+        "correct_answer":"he"
+    },
+
+    {
+        "id":10,
+        "qusetion":" ' Which of the following will run without errors? ' ",
+        "incorrect_answer":["round()","round(7463.123,2,1)"],
+        "correct_answer":"round(45.8)"
+    },
+
+    {
+        "id":11,
+        "qusetion":" ' In python we do not specify types, it is directly interpreted by the compiler, so consider the following operation to be performed.1. >>>x = 13 ? 2 objective is to make sure x has a integer value, select all that apply (python 3.xx) ' ",
+        "incorrect_answer":[" x = 13 // 2","x = int(13 / 2)"," x = 13 % 2","All of the mentioned"],
+        "correct_answer":"All of the mentioned"
+    },
+
+
+    {
+        "id":12,
+        "qusetion":" ' What will be the output of the following Python code snippet?1. def example(a):2. a = a + '2'3. a = a*24. return a 5. >>>example('hello') ' ",
+        "incorrect_answer":["cannot perform mathematical operation on strings","hello2hello2","hello2"],
+        "correct_answer":"indentation Error"
+    },
+
+
+    {
+        "id":14,
+        "qusetion":"Which of the following results in a SyntaxError?",
+        "incorrect_answer":["�Once upon a time��, she said.","�He said, �Yes!�","�3/�","��That�s okay��"],
+        "correct_answer":"�3/�"
+    },
+
+    {
+        "id":15,
+        "qusetion":" ' Select all options that print hello-how-are-you ' ",
+        "incorrect_answer":["print(�hello�, �how�, �are�, �you�)","print(�hello� + �-� + �how� + �-� + �are� + �you�)"],
+        "correct_answer":"print(�hello-� + �how-are-you�)"
+    },
+
+
+    {
+        "id":16,
+        "qusetion":" ' What is the return value of trunc() ' ",
+        "incorrect_answer":["bool","float","none"],
+        "correct_answer":"int"
+    },
+
+    {
+        "id":17,
+        "qusetion":" ' What error occurs when you execute the following Python code snippet?apple = mango ' ",
+        "incorrect_answer":["SyntaxError","ValueError"],
+        "correct_answer":"NameError"
+    },
+
+    {
+        "id":18,
+        "qusetion":" ' What data type is the object below? L = [1, 23, 'hello', 1] ' ",
+        "incorrect_answer":["dictionary","tuple","array"],
+        "correct_answer":"list"
+    },
+
+    {
+        "id":19,
+        "qusetion":" ' Which of the following is incorrect? ' ",
+        "incorrect_answer":["x = 0b101","x = 0x4f5","x = 19023"],
+        "correct_answer":"x = 03964"
+    },
+
+    {
+        "id":20,
+        "qusetion":" ' The following is displayed by a print function call. Select all of the function calls that result in this output 1. tom 2. dick  3. harry ' ",
+        "incorrect_answer":["print('''tom\ndick\nharry''')","print(��tomdickharry��)"],
+        "correct_answer":"print(�tom\ndick\nharry�)"
+    },
+
+    {
+        "id":21,
+        "qusetion":" '  What will be the output of the following Python code? x = ['ab', 'cd'] for i in x:  x.append(i.upper()) print(x) ' ",
+        "incorrect_answer":["[�AB�, �CD�]","[�ab�, �cd�, �AB�, �CD�] ","[�ab�, �cd�]"],
+        "correct_answer":"none of the mentioned"
+    },
+
+    {
+        "id":22,
+        "qusetion":"' What will be the output of the following Python code? i = 1 while True:  if i%3 == 0:  break  print(i)  i + = 1 ' ",
+        "incorrect_answer":["1 2","1 2 3","none of the mentioned"],
+        "correct_answer":"error"
+    },
+
+    {
+        "id":23,
+        "qusetion":" ' What will be the output of the following Python code? i = 1 while True:  if i%0O7 == 0:  break  print(i)  i += 1' ",
+        "incorrect_answer":["1 2 3 4 5 6 7","error","none of the mentioned"],
+        "correct_answer":"1 2 3 4 5 6"
+    },
+
+    {
+        "id":24,
+        "qusetion":"' What will be the output of the following Python code  i = 5 while True:  if i%0O9 == 0:  break  print(i)  i += 1 ' ",
+        "incorrect_answer":["5 6 7 8","5 6 7 8 9","5 6 7 8 9 10 11 12 13 14 15 �."],
+        "correct_answer":"error"
+    },
+
+    {
+        "id":25,
+        "qusetion":" ' What will be the output of the following Python code? x = 'abcdef' i = 'i' while i in x:  print(i, end='') ' ",
+        "incorrect_answer":["a b c d e f","abcdef"],
+        "correct_answer":"no output"
+    },
+
+    {
+        "id":26,
+        "qusetion":" ' What will be the output of the following Python code? x = 'abcdef' i = 'a' while i in x:  print(i, end = '') ' ",
+        "incorrect_answer":["no output","i i i i i i �","a b c d e f"],
+        "correct_answer":"a a a a a a �"
+    },
+
+    {
+        "id":27,
+        "qusetion":" ' What will be the output of the following Python code? x = 'abcdef' i = 'a' while i in x:  x = x[:-1]  print(i, end = '') ' ",
+        "incorrect_answer":["i i i i i i","a a a a a","none of the mentioned"],
+        "correct_answer":"a a a a a a"
+    },
+
+    {
+        "id":28,
+        "qusetion":" ' What will be the output of the following Python code? x = 'abcdef' i = 'a' while i in x[:-1]:  print(i, end = '') ' ",
+        "incorrect_answer":["a a a a a","a a a a a a","a"],
+        "correct_answer":"a a a a a a �"
+    },
+
+    {
+        "id":29,
+        "qusetion":" ' What will be the output of the following Python code? x = 'abcdef' i = 'a' while i in x:  x = x[1:]  print(i, end = '') ' ",
+        "incorrect_answer":["a a a a a a","no output","error"],
+        "correct_answer":"a"
+    },
+
+    {
+        "id":30,
+        "qusetion":" ' What will be the output of the following Python code? x = 'abcdef' i = 'a' while i in x[1:]:  print(i, end = '') ' ",
+        "incorrect_answer":["a a a a a a","a","error"],
+        "correct_answer":"no output"
+    },
+{
+        "id":31,
+        "qusetion":" ' What will be the output of the following Python code? for i in range(int(2.0)):  print(i) ' ",
+        "incorrect_answer":["0.0 1.0","error","none of the mentioned"],
+        "correct_answer":"0 1"
+    },
+{
+        "id":32,
+        "qusetion":" ' What will be the output of the following Python code? for i in range(float('inf')):  print (i) ' ",
+        "incorrect_answer":["0.0 0.1 0.2 0.3 �","0 1 2 3 �","0.0 1.0 2.0 3.0 �"],
+        "correct_answer":"none of the mentioned"
+    },
+{
+        "id":33,
+        "qusetion":" ' What will be the output of the following Python code snippet? for i in [1, 2, 3, 4][::-1]:  print (i) ' ",
+        "incorrect_answer":["1 2 3 4","error","none of the mentioned"],
+        "correct_answer":"4 3 2 1"
+    },
+{
+        "id":34,
+        "qusetion":" ' What will be the output of the following Python code snippet? for i in ''.join(reversed(list('abcd'))):  print (i)  ' ",
+        "incorrect_answer":["a b c d","error","none of the mentioned"],
+        "correct_answer":"d c b a"
+    },
+{
+        "id":35,
+        "qusetion":" ' What will be the output of the following Python code? d = {0: 'a', 1: 'b', 2: 'c'} for i in d:  print(i) ' ",
+        "incorrect_answer":["a b c","0 a 1 b 2 c","none of the mentioned"],
+        "correct_answer":"0 1 2"
+    },
+{
+        "id":36,
+        "qusetion":" ' What will be the output of the following Python code? d = {0: 'a', 1: 'b', 2: 'c'} for x, y in d:  print(x, y) ' ",
+        "incorrect_answer":["0 1 2","a b c","0 a 1 b 2 c"],
+        "correct_answer":"none of the mentioned"
+    },
+{
+        "id":37,
+        "qusetion":" ' What will be the output of the following Python code? d = {0: 'a', 1: 'b', 2: 'c'} for x in d.keys():  print(d[x]) ' ",
+        "incorrect_answer":["0 1 2","0 a 1 b 2 c"],
+        "correct_answer":"a b c"
+    },
+{
+        "id":38,
+        "qusetion":" ' What will be the output of the following Python code? for i in range(10):  if i == 5:  break  else:  print(i) else:  print('Here') '  ",
+        "incorrect_answer":["0 1 2 3 4 Here","0 1 2 3 4 5 Here","none of the mentioned"],
+        "correct_answer":"0 1 2 3 4"
+    },
+{
+        "id":39,
+        "qusetion":" ' What will be the output of the following Python code snippet? a = [0, 1, 2, 3] i = -2 for i not in a:  print(i)  i += 1  ' ",
+        "incorrect_answer":["-2 -1","0","none of the mentioned"],
+
+        "correct_answer":"error"
+    },
+{
+        "id":40,
+        "qusetion":" ' What will be the output of the following Python code snippet? string = 'my name is x' for i in ' '.join(string.split()):  print (i, end=',') ' ",
+        "incorrect_answer":[" my, name, is, x","error"],
+        "correct_answer":" m, y, , n, a, m, e, , i, s, , x,"
+    },
+
+    {
+        "id":41,
+        "qusetion":" ' What will be the output of the following Python statement? 1. >>>'abcd'[2:] ' ",
+        "incorrect_answer":["a","ab","dc"],
+        "correct_answer":"cd"
+    },
+
+    {
+        "id":42,
+        "qusetion":" ' What will be the output of the following Python code? 1. >>> str1 = 'hello' 2. >>> str2 = ',' 3. >>> str3 = 'world' 4. >>> str1[-1:] ' ",
+        "incorrect_answer":["olleh","hello","h"],
+        "correct_answer":"o"
+    },
+
+    {
+        "id":43,
+        "qusetion":" ' What arithmetic operators cannot be used with strings? ' ",
+        "incorrect_answer":["+","*","All of the mentioned"],
+        "correct_answer":"-"
+    },
+
+    {
+        "id":44,
+        "qusetion":" ' What will be the output of the following Python code? 1. >>>print (r'\nhello') '  ", 
+        "incorrect_answer":["a new line and hello","the letter r and then hello","error"],
+        "correct_answer":"\nhello"
+    },
+
+    {
+        "id":45,
+        "qusetion":" ' What will be the output of the following Python statement? 1. >>> print('x/97/x98') ' ",
+        "incorrect_answer":["Error","/x97/x98"],
+        "correct_answer":"x/97"
+    },
+
+    {
+        "id":46,
+        "qusetion":" ' What will be the output of the following Python code? 1. >>>str1='helloworld' 2. >>>str1[::-1]  ' ",
+        "incorrect_answer":["hello","world","helloworld"],
+        "correct_answer":"dlrowolleh"
+    },
+
+    {
+        "id":47,
+        "qusetion":" ' What will be the output of the following Python statement? 1. >>>print(chr(ord('b')+1)) ' ",
+        "incorrect_answer":["a","b","A"],
+        "correct_answer":"c"
+    },
+
+    {
+        "id":48,
+        "qusetion":" ' Suppose s is �\t\tWorld\n�, what is s.strip()?' ",
+        "incorrect_answer":["\t\tWorld\n","\t\tWorld\n","\t\tWORLD\n"],
+        "correct_answer":"World"
+    },
+
+    {
+        "id":49,
+        "qusetion":" ' The format function, when applied on a string returns' ",
+        "incorrect_answer":[" Error","int","bool"],
+        "correct_answer":"str"
+    },
+
+    {
+        "id":50,
+        "qusetion":" ' What will be the output of the �hello� +1+2+3? ' ",
+        "incorrect_answer":["hello123","hello","hello6"],
+        "correct_answer":"Error"
+    },
+
+    {
+        "id":51,
+        "qusetion":" ' What will be the output of the following Python code? 1. >>>print('D', end = ' ') 2. >>>print('C', end = ' ') 3. >>>print('B', end = ' ') 4. >>>print('A', end = ' ') ' ",
+        "incorrect_answer":["DCBA","A, B, C, D","D, C, B, A will be displayed on four lines"],
+        "correct_answer":"D C B A"
+    },
+
+    {
+        "id":52,
+        "qusetion":" ' What will be displayed by print(ord(�b�) � ord(�a�))? ' ",
+        "incorrect_answer":["0","-1","2"],
+        "correct_answer":"1"
+    },
+
+    {
+        "id":53,
+        "qusetion":" ' Say s=�hello� what will be the return value of type(s)? ' ",
+        "incorrect_answer":["int","bool","String"],
+        "correct_answer":"str"
+    },
+
+    {
+        "id":54,
+        "qusetion":" ' What will be the output of the following Python code? print('Hello {name1} and {name2}'.'format(name1='foo', name2='bin')) ' ",
+        "incorrect_answer":["Hello {name1} and {name2}","Error","Hello and"],
+        "correct_answer":"Hello foo and bin"
+    },
+
+    {
+        "id":55,
+        "qusetion":" ' What will be the output of the following Python code? print('Hello {0} and {1}'.format(('foo', 'bin')))' ",
+        "incorrect_answer":["Hello foo and bin","Hello (�foo�, �bin�) and (�foo�, �bin�)","None of the mentioned"],
+        "correct_answer":"Error"
+    },
+
+    {
+        "id":56,
+        "qusetion":" ' What will be the output of the following Python code snippet? print('{:,}'.format('1112223334')) ' ",
+        "incorrect_answer":["1,112,223,334","111,222,333,4","1112223334"],
+        "correct_answer":"Error"
+    },
+
+    {
+        "id":57,
+        "qusetion":" ' What will be the output of the following Python code snippet? print('{:#}'.format(1112223334)) ' ",
+        "incorrect_answer":["1,112,223,334","111,222,333,4","Error"],
+        "correct_answer":"1112223334"
+    },
+
+    {
+        "id":58,
+        "qusetion":" ' What is �Hello�.replace(�l�, �e�)? ' ",
+        "incorrect_answer":["Heelo","Heleo","None"],
+        "correct_answer":"Heeeo"
+    },
+
+    {
+        "id":59,
+        "qusetion":" ' To return the length of string s what command do we execute? ' ",
+        "incorrect_answer":["en(s)","size(s)","s.size()"],
+        "correct_answer":"s.__len__()"
+    },
+
+    {
+        "id":60,
+        "qusetion":" ' What will be the output of the following Python code? 1. class Count: 2. def __init__(self, count = 0): 3. self.__count = count 4. 5. c1 = Count(2) 6. c2 = Count(2) 7. print(id(c1) == id(c2), end = '') 8. s1 = 'Good' 9. s2 = 'Good' 11. print(id(s1) == id(s2)) ' ",
+        "incorrect_answer":["True False","True True","False False"],
+        "correct_answer":"False True"
+    },
+
+    {
+        "id":61,
+        "qusetion":" ' What will be the output of the following Python code? l1=[1,2,3] l2=[4,5,6] [x*y for x in l1 for y in l2]  ' ",
+        "incorrect_answer":["[4, 8, 12, 5, 10, 15, 6, 12, 18]"," [4, 10, 18]","[18, 12, 6, 15, 10, 5, 12, 8, 4]"],
+        "correct_answer":"[4, 5, 6, 8, 10, 12, 12, 15, 18]"
+    },
+
+    {
+        "id":62,
+        "qusetion":" ' Write the list comprehension to pick out only negative integers from a given list �l�. ' ",
+        "incorrect_answer":["[x<0 in l] ","[x for x<0 in l] "],
+        "correct_answer":"[x for x in l if x<0] "
+    },
+
+    {
+        "id":63,
+        "qusetion":" ' What will be the output of the following Python code? l1=[10, 20, 30] l2=[-10, -20, -30] l3=[x+y for x, y in zip(l1, l2)] l3 ' ",
+        "incorrect_answer":["Error","0","[-20, -60, -80]"],
+        "correct_answer":"[0, 0, 0]"
+    },
+
+    {
+        "id":64,
+        "qusetion":" ' Write a list comprehension for number and its cube for l=[1, 2, 3, 4, 5, 6, 7, 8, 9]' ",
+        "incorrect_answer":["[x^3 for x in l]","[x**3 in l]"],
+        "correct_answer":"[x**3 for x in l]"
+    },
+
+    {
+        "id":65,
+        "qusetion":" ' What will be the output of the following Python code? import math [str(round(math.pi)) for i in range (1, 6)]  ' ",
+        "incorrect_answer":[" [�3�, �3�, �3�, �3�, �3�, �3�]","[�3.1�, �3.14�, �3.142�, �3.1416�, �3.14159�]"],
+        "correct_answer":"[�3�, �3�, �3�, �3�, �3�]"
+    },
+
+    {
+        "id":66,
+        "qusetion":" ' Which of the following commands will create a list? ' ",
+        "incorrect_answer":[" list1 = list()","list1 = [] ","list1 = list([1, 2, 3])","all of the mentioned"],
+        "correct_answer":"all of the mentioned"
+    },
+
+    {
+        "id":67,
+        "qusetion":" ' Suppose listExample is [�h�,�e�,�l�,�l�,�o�], what is len(listExample)? ' ",
+        "incorrect_answer":["4","None","Error"],
+        "correct_answer":"5"
+    },
+
+    {
+        "id":68,
+        "qusetion":" ' Suppose list1 is [2445,133,12454,123], what is max(list1)? ' ",
+        "incorrect_answer":["2445","133","123"],
+        "correct_answer":"12454"
+    },
+
+    {
+        "id":69,
+        "qusetion":" ' To shuffle the list(say list1) what function do we use?' ",
+        "incorrect_answer":["list1.shuffle()","shuffle(list1)"],
+        "correct_answer":"random.shuffle(list1)"
+    },
+
+    {
+        "id":70,
+        "qusetion":" ' Suppose list1 is [2, 33, 222, 14, 25], What is list1[-1]? ' ",
+        "incorrect_answer":["Error","None","2"],
+        "correct_answer":"25"
+    },
+
+    {
+        "id":71,
+        "qusetion":" ' Suppose list1 is [2, 33, 222, 14, 25], What is list1[:-1]? ' ",
+        "incorrect_answer":["Error","25","[25, 14, 222, 33, 2]"],
+        "correct_answer":"[2, 33, 222, 14]"
+    },
+
+    {
+        "id":72,
+        "qusetion":" ' Suppose listExample is [�h�,�e�,�l�,�l�,�o�], what is len(listExample)? ' ",
+        "incorrect_answer":["4","None","Error"],
+        "correct_answer":"5"
+    },
+
+    {
+        "id":73,
+        "qusetion":" ' Suppose list1 is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after list1.reverse()? ' ",
+        "incorrect_answer":["[3, 4, 5, 20, 5, 25, 1, 3]","[1, 3, 3, 4, 5, 5, 20, 25] ","Error"],
+        "correct_answer":"[3, 1, 25, 5, 20, 5, 4, 3] "
+    },
+
+    {
+        "id":74,
+        "qusetion":" ' Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.extend([34, 5])? ' ",
+        "incorrect_answer":["[25, 20, 5, 5, 4, 3, 3, 1, 34, 5]","[1, 3, 3, 4, 5, 5, 20, 25, 34, 5]","Error"],
+        "correct_answer":"[3, 4, 5, 20, 5, 25, 1, 3, 34, 5] "
+    },
+
+    {
+        "id":75,
+        "qusetion":" ' What will be the output of the following Python code? 1. >>>'Welcome to Python'.split() ' ",
+        "incorrect_answer":["�Welcome�, �to�, �Python�","None of the mentioned"],
+        "correct_answer":" [�Welcome�, �to�, �Python�]"
+    },
+
+    {
+        "id":76,
+        "qusetion":" ' What will be the output of the following Python code? 1. myList = [1, 2, 3, 4, 5, 6] 2. for i in range(1, 6): 3. myList[i - 1] = myList[i] 4. for i in range(0, 6): 5. print(myList[i], end = '') ' ",
+        "incorrect_answer":["2 3 4 5 6 1","6 1 2 3 4 5"],
+        "correct_answer":"2 3 4 5 6 6"
+    },
+
+    {
+        "id":77,
+        "qusetion":" ' How many elements are in m? 1. m = [[x, y] for x in range(0, 4) for y in range(0, 4)] ' ",
+        "incorrect_answer":["8","12","32"],
+        "correct_answer":"16"
+    },
+
+    {
+        "id":78,
+        "qusetion":" ' What will be the output of the following Python code? 1. values = [[3, 4, 5, 1], [33, 6, 1, 2]] 2. v = values[0][0] 3. for lst in values: 4. for element in lst: 5. if v > element: 6. v = element 7. print(v) ' ",
+        "incorrect_answer":["3","5","6"],
+        "correct_answer":"1"
+    },
+
+    {
+        "id":79, 
+        "qusetion":" ' What will be the output of the following Python code? 1. values = [[3, 4, 5, 1 ], [33, 6, 1, 2]]  2. for row in values: 3. row.sort() 4. for element in row:  5. print(element, end = '') 6. print() ' ",
+        "incorrect_answer":["The program prints two rows 3 4 5 1 followed by 33 6 1 2","The program prints on row 3 4 5 1 33 6 1 2"],
+        "correct_answer":"The program prints two rows 1 3 4 5 followed by 1 2 6 33"
+    },
+
+    {
+        "id":80,
+        "qusetion":" ' What will be the output of the following Python code? 1. data = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]  2. def ttt(m): 3. v = m[0][0] 4. for row in m: 5. for element in row: 6. if v < element: v = element 7. return v 8.print(ttt(data[0])) ' ",
+        "incorrect_answer":["1","2","5"],
+        "correct_answer":"4"
+    },
+
+    {
+        "id":81,
+        "qusetion":" ' What is the data type of (1)? ' ",
+        "incorrect_answer":["Tuple","List","Both tuple and integer"],
+        "correct_answer":"Integer"
+    },
+
+    {
+        "id":82,
+        "qusetion":" '  What will be the output of the following Python code?  >>> a=(1,2,(4,5)) >>> b=(1,2,(3,4)) >>> a<b ' ",
+        "incorrect_answer":["True","Error, < operator is not valid for tuples","Error, < operator is valid for tuples but not if there are sub-tuples"],
+        "correct_answer":"False"
+    },
+
+    {
+        "id":83,
+        "qusetion":" ' What will be the output of the following Python code? >>> a=('Check')*3  >>> a ' ",
+        "incorrect_answer":[" (�Check�,�Check�,�Check�)","* Operator not valid for tuples","Syntax error"],
+        "correct_answer":" (�CheckCheckCheck�)"
+    },
+
+    {
+        "id":84,
+        "qusetion":" ' . What will be the output of the following Python code? >>> a=(1,2,3,4) >>> del(a[2]) ' ",
+        "incorrect_answer":["Now, a=(1,2,4)"," Now, a=(1,3,4)"," Now a=(3,4)"],
+        "correct_answer":"Error as tuple is immutable"
+    },
+
+    {
+        "id":85,
+        "qusetion":"",
+        "incorrect_answer":["","",""],
+        "correct_answer":""
+    },
+
+    {
+        "id":86,
+        "qusetion":" ' What will be the output of the following Python code? >>> a=(2,3,4) >>> sum(a,3) ' ",
+        "incorrect_answer":["Too many arguments for sum() method","The method sum() doesn�t exist for tuples","9"],
+        "correct_answer":"12"
+    },
+
+    {
+        "id":87,
+        "qusetion":"What type of data is: a=[(1,1),(2,4),(3,9)]?",
+        "incorrect_answer":["Array of tuples","Tuples of lists","Invalid type"],
+        "correct_answer":"List of tuples"
+    },
+
+    {
+        "id":88,
+        "qusetion":" ' What will be the output of the following Python code? >>> a=(0,1,2,3,4) >>> b=slice(0,2) >>> a[b] ' ",
+        "incorrect_answer":["Invalid syntax for slicing","[0,2] ","(0,2)"],
+        "correct_answer":"(0,1)"
+    },
+
+    {
+        "id":89,
+        "qusetion":" ' Is the following Python code valid? >>> a=(1,2,3) >>> b=('A','B','C') >>> c=tuple(zip(a,b)) ' ",
+        "incorrect_answer":["Yes, c will be ((1,2,3),(�A�,�B�,�C�))","No because tuples are immutable","No because the syntax for zip function isn�t valid"],
+        "correct_answer":"Yes, c will be ((1, �A�), (2, �B�), (3, �C�))"
+    },
+
+    {
+        "id":90,
+        "qusetion":" ' Which of these about a set is not true? ' ",
+        "incorrect_answer":["Mutable data type","Allows duplicate values","Data type with unordered values"],
+        "correct_answer":"Immutable data type"
+    },
+
+    {
+        "id":91,
+        "qusetion":" ' What will be the output of the following Python code?  nums = set([1,1,2,3,3,3,4,4]) print(len(nums)) ' ",
+        "incorrect_answer":["7","Error, invalid syntax for formation of set","8"],
+        "correct_answer":"4"
+    },
+
+    {
+        "id":92,
+        "qusetion":" ' What will be the output of the following Python code? a = [5,5,6,7,7,7] b = set(a) def test(lst):  if lst in b:  return 1  else:  return 0 for i in filter(test, a):  print(i,end='') ' ",
+        "incorrect_answer":["5 5 6","5 6 7"," 5 6 7 7 7"],
+        "correct_answer":"5 5 6 7 7 7"
+    },
+
+    {
+        "id":93,
+        "qusetion":" ' What will be the output of the following Python code? >>> a={5,4} >>> b={1,2,4,5} >>> a<b ' ",
+        "incorrect_answer":["{1,2}","False","Invalid operation"],
+        "correct_answer":"True"
+    },
+
+    {
+        "id":94,
+        "qusetion":" ' If a={5,6,7}, what happens when a.add(5) is executed? ' ",
+        "incorrect_answer":["a={5,5,6,7}","Error as there is no add function for set data type","Error as 5 already exists in the set"],
+        "correct_answer":"a={5,6,7}"
+    },
+
+    {
+        "id":95,
+        "qusetion":" ' What will be the output of the following Python code? >>> a={4,5,6} >>> b={2,8,6}>>> a+b ' ",
+        "incorrect_answer":["{4,5,6,2,8}","{4,5,6,2,8,6}","Error as the duplicate item 6 is present in both sets"],
+        "correct_answer":"Error as unsupported operand type for sets"
+    },
+
+    {
+        "id":96,
+        "qusetion":" ' What will be the output of the following Python code snippet? {a**2 for a in range(4)} ' ", 
+        "incorrect_answer":["{1, 4, 9, 16}","{0, 1, 4, 9, 16}","Error"],
+        "correct_answer":"{0, 1, 4, 9}"
+    },
+
+    {
+        "id":97,
+        "qusetion":"What will be the output of the following Python code snippet? a=[1, 4, 3, 5, 2] b=[3, 1, 5, 2, 4] a==b set(a)==set(b) ' ",
+        "incorrect_answer":["True False","False False","True True"],
+        "correct_answer":"False True"
+    },
+
+    {
+        "id":98,
+        "qusetion":" ' Is the following Python code valid? a={3,4,{7,5}} print(a[2][0]) ' ",
+        "incorrect_answer":["Yes, 7 is printed","Error, elements of a set can�t be printed","Yes, {7,5} is printed"],
+        "correct_answer":"Error, subsets aren�t allowed"
+    },
+
+    {
+        "id":99,
+        "qusetion":" ' What will be the output of the following Python code? >>> a={3,4,5} >>> b={5,6,7} >>> a|b ' ",
+        "incorrect_answer":["Invalid operation","{5}","{3,4,6,7}"],
+        "correct_answer":"{3, 4, 5, 6, 7}"
+    },
+
+    {
+        "id":100,
+        "qusetion":" ' What will be the output of the following Python code? >>> a={5,6,7,8} >>> b={7,5,6,8} >>> a==b ' ",
+        "incorrect_answer":["False"],
+        "correct_answer":"True"
+    },
+
+    {
+        "id":101,
+        "qusetion":" ' Which of the statements about dictionary values if false? ' ",
+        "incorrect_answer":["More than one key can have the same value","The values of the dictionary can be accessed as dict[key]","Values of a dictionary can be a mixture of letters and numbers"],
+        "correct_answer":"Values of a dictionary must be unique"
+    },
+
+    {
+        "id":102,
+        "qusetion":" ' If a is a dictionary with some key-value pairs, what does a.popitem() do? ' ",
+        "incorrect_answer":["Removes all the key-value pairs","Removes the key-value pair for the key given as an argument","Invalid method for dictionary"],
+        "correct_answer":"Removes an arbitrary element"
+    },
+
+    {
+        "id":103,
+        "qusetion":" '  What will be the output of the following Python code snippet? total={} def insert(items):  if items in total:  total[items] += 1  else:  total[items] = 1 insert('Apple') insert('Ball') insert('Apple') print (len(total)) ' ",
+        "incorrect_answer":["3","1","0"],
+        "correct_answer":"2"
+    },
+
+    {
+        "id":104,
+        "qusetion":" ' What will be the output of the following Python code snippet? a = {} a[1] = 1 a['1'] = 2 a[1]=a[1]+1 count = 0 for i in a:  count += a[i] print(count) ' ",
+        "incorrect_answer":["1","2","Error, the keys can�t be a mixture of letters and numbers"],
+        "correct_answer":"4"
+    },
+
+    {
+        "id":105,
+        "qusetion":" ' What will be the output of the following Python code snippet? test = {1:'A', 2:'B', 3:'C'} test = {} print(len(test)) ' ",
+        "incorrect_answer":["3","None","An exception is thrown"],
+        "correct_answer":"0"
+    },
+
+    {
+        "id":108, 
+        "qusetion":" ' What will be the output of the following Python code snippet? a = {} a[1] = 1 a['1'] = 2 a[1.0]=4 count = 0 for i in a:  count += a[i] print(count) ' ",
+        "incorrect_answer":["3","2","An exception is thrown"],
+        "correct_answer":"6"
+    },
+
+    {
+        "id":109,
+        "qusetion":"",
+        "incorrect_answer":["","",""],
+        "correct_answer":""
+    },
+
+    {
+        "id":110,
+        "qusetion":" ' What will be the output of the following Python code snippet? a={} a['a']=1 a['b']=[2,3,4] print(a) ' ",
+        "incorrect_answer":["{�b�: [2], �a�: [3]}","{�b�: [2], �a�: 1}","Exception is thrown"],
+        "correct_answer":"{�b�: [2, 3, 4], �a�: 1}"
+    },
+
+    {
+        "id":111,
+        "qusetion":" ' What will be the output of the following Python code snippet? >>>import collections >>> b=collections.Counter([2,2,3,4,4,4]) >>> b.most_common(1) ' ",
+        "incorrect_answer":["Counter({4: 3, 2: 2, 3: 1})","{3:1}","{4:3}"],
+        "correct_answer":"[(4, 3)]"
+    },
+
+    {
+        "id":112,
+        "qusetion":" ' 15. What will be the output of the following Python code snippet? >>> import collections >>> a=collections.Counter([3,3,4,5]) >>> b=collections.Counter([3,4,4,5,5,5]) >>> a&b ' ",
+        "incorrect_answer":["Counter({3: 12, 4: 1, 5: 1})","Counter({4: 2})","Counter({5: 1})"],
+        "correct_answer":"Counter({3: 1, 4: 1, 5: 1})"
+    },
+
+    {
+        "id":113,
+        "qusetion":" ' What is the output of the function complex()? ' ",
+        "incorrect_answer":["0+0j","0","Error"],
+        "correct_answer":"0j"
+    },
+
+    {
+        "id":114,
+        "qusetion":" ' What will be the output of the following Python functions? x=3 eval('x^2') ' ",
+        "incorrect_answer":["Error","9","6"],
+        "correct_answer":"1"
+    },
+
+    {
+        "id":115,
+        "qusetion":" ' What will be the output of the following Python code?  1. lamb = lambda x: x ** 3 2. print(lamb(5)) ' ", 
+        "incorrect_answer":["15","555","None of the mentioned"],
+        "correct_answer":"125"
+    },
+
+    {
+        "id":116,
+        "qusetion":"",
+        "incorrect_answer":["","",""],
+        "correct_answer":""
+    },
+
+    {
+        "id":117,
+        "qusetion":" ' Does Lambda contains return statements? ' ",
+        "incorrect_answer":["True"],
+        "correct_answer":"False"
+    },
+
+    {
+        "id":118,
+        "qusetion":" ' What will be the output of the following Python code? 1. def f(x, y, z): return x + y + z 2. f(2, 30, 400) ' ",
+        "incorrect_answer":["430","24000","No output"],
+        "correct_answer":"432"
+    },
+
+    {
+        "id":119,
+        "qusetion":" ' What will be the output of the following Python code? 1. def writer(): 2. title = 'Sir' 3. name = (lambda x:title + ' ' + x) 4. return name 5. 6. who = writer() 7. who('Arthur') ' ",
+        "incorrect_answer":["Arthur Sir","Arthur","None of the mentioned"],
+        "correct_answer":"Sir Arthur"
+    },
+
+    {
+        "id":120,
+        "qusetion":" ' What will be the output of the following Python code? 1. min = (lambda x, y: x if x < y else y) 2. min(101*99, 102*98) ' ",
+        "incorrect_answer":["9997","9999","None of the mentioned"],
+        "correct_answer":"9996"
+    },
+ {
+        "id":121,
+        "qusetion":" ' Which module in the python standard library parses options received from the command line? '  ",
+        "incorrect_answer":["os","getarg","main"],
+        "correct_answer":"getopt"
+    },
+{
+        "id":122,
+        "qusetion":" ' How are variable length arguments specified in the function heading ' ",
+        "incorrect_answer":["one underscore followed by a valid identifier"," two stars followed by a valid identifier","two underscores followed by a valid identifier"],
+        "correct_answer":"one star followed by a valid identifier"
+    },
+{
+        "id":123,
+        "qusetion":" ' What is the type of sys.argv ' ",
+        "incorrect_answer":["set","tuple","string"],
+        "correct_answer":"list"
+    },
+{
+        "id":124,
+        "qusetion":" ' What is the value stored in sys.argv[0]? ' ",
+        "incorrect_answer":["you cannot access it","null","the first argument"],
+        "correct_answer":"the program�s name"
+    },
+{
+        "id":125,
+        "qusetion":" '  How are default arguments specified in the function heading ' ",
+        "incorrect_answer":["identifier followed by the default value within backticks (�)","identifier followed by the default value within square brackets ([])","identifier"],
+        "correct_answer":"identifier followed by an equal to sign and the default value"
+    },
+{
+        "id":126,
+        "qusetion":" ' . What will be the output of the following Python code? def foo(x):  x[0] = ['def']  x[1] = ['abc'] q = ['abc', 'def'] print(id(q) == foo(q)) ' ",
+        "incorrect_answer":["False","None","Error"],
+        "correct_answer":"True"
+    },
+{
+        "id":127,
+        "qusetion":" ' Where are the arguments received from the command line stored? ' ",
+        "incorrect_answer":["os.argv","argv","none of the mentioned"],
+        "correct_answer":"sys.argv"
+    },
+{
+        "id":128,
+        "qusetion":" ' What will be the output of the following Python code? def foo(i, x=[]):  x.append(x.append(i))  return x for i in range(3):  y = foo(i) print(y) ' ",
+        "incorrect_answer":["[[[0]], [[[0]], [1]], [[[0]], [[[0]], [1]], [2]]] ","[[0], [[0], 1], [[0], [[0], 1], 2]] ","[[[0]], [[[0]], [1]], [[[0]], [[[0]], [1]], [2]]] "],
+        "correct_answer":"[0, None, 1, None, 2, None] "
+    },
+{
+        "id":129,
+        "qusetion":" ' What will be the output of the following Python code? def f1():  x=100  print(x) x=+1 f1() ' ",
+        "incorrect_answer":["101","99","Error"],
+        "correct_answer":"100"
+    },
+{
+        "id":130,
+        "qusetion":" ' What will be the output of the following Python code? def san(x):  print(x+1)  x=-2 x=4 san(12) ' ",
+        "incorrect_answer":["10","2","5"],
+        "correct_answer":"13"
+    },
+{
+        "id":131,
+        "qusetion":" ' Which of the following data structures is returned by the functions globals() and locals()? ' ",
+        "incorrect_answer":["list","set","tuple"],
+        "correct_answer":"dictionary"
+    },
+{
+        "id":132,
+        "qusetion":" ' What will be the output of the following Python code? def f1():  global x   x+=1  print(x) x=12 print('x') ' ",
+        "incorrect_answer":["13","13 x","Error"],
+        "correct_answer":"x"
+    },
+{
+        "id":133,
+        "qusetion":" ' What will be the output of the following Python code? x=12 def f1(a,b=x):  print(a,b) x=15 f1(4) ' ",
+        "incorrect_answer":["12 4","4 15","Error"],
+        "correct_answer":"4 12"
+    },
+{
+        "id":134, 
+        "qusetion":" ' What will be the output of the following Python code? def f(p, q, r):  global s  p = 10  q = 20  r = 30  s = 40  print(p,q,r,s) p,q,r,s = 1,2,3,4 f(5,10,15) ' ",
+        "incorrect_answer":["1 2 3 4","5 10 15 4","5 10 15 40"],
+        "correct_answer":"10 20 30 40"
+    },
+{
+        "id":135,
+        "qusetion":" '  What will be the output of the following Python code? x=100 def f1():  global x  x=90 def f2():  global x  x=80 print(x) ' ",
+        "incorrect_answer":["90","80","Error"],
+        "correct_answer":"100"
+    },
+{
+        "id":136,
+        "qusetion":" ' On assigning a value to a variable inside a function, it automatically becomes a global variable. '  ",
+        "incorrect_answer":["True"],
+        "correct_answer":"False"
+    },
+{
+        "id":137,
+        "qusetion":" ' What will be the output of the following Python code? def f(): x=4 x=1 f() x ' ",
+        "incorrect_answer":["4","Junk value","Error"],
+        "correct_answer":"1"
+    },
+{
+        "id":138,
+        "qusetion":" ' What happens if a local variable exists with the same name as the global variable you want to access? ' ",
+        "incorrect_answer":["The local variable is shadowed","Undefined behavior","Error"],
+        "correct_answer":"The global variable is shadowed"
+    },
+{
+        "id":139,
+        "qusetion":" ' What will be the output of the following Python code? def f1():  x=15  print(x) x=12 f1() ' ",
+        "incorrect_answer":["12","1512","Error"],
+        "correct_answer":"15"
+    },
+{
+        "id":140,
+        "qusetion":" ' How are required arguments specified in the function heading? ' ",
+        "incorrect_answer":[" identifier followed by an equal to sign and the default value","identifier followed by the default value within backticks (�)","identifier followed by the default value within square brackets ([])"],
+        "correct_answer":"identifier"
+    }
+]

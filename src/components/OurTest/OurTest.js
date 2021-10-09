@@ -70,7 +70,7 @@ const OurTest = () => {
                     <ServicesH2 >basics_one</ServicesH2>
                     <ServicesP>An exam that includes questions about the simple basics of the Python language - (variables definition , dataType , condition statements)</ServicesP>
                     <div>
-                    <Go onClick={handletest} name='basics_one' id="withlimit" style={{marginRight:"15px"}}> Test With Limit</Go>
+                    <Go onClick={window.location = 'test'} name='basics_one' id="withlimit" style={{marginRight:"15px"}}> Test With Limit</Go>
                     <Go onClick={handletest} name='basics_one' id="withoutlimit"> Test Without Limit</Go>
                     </div>
                 </ServicesCard>

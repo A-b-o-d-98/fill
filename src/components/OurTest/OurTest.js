@@ -56,7 +56,7 @@ const OurTest = () => {
     return ( 
         <> 
                  
-        <Icon to="/">Zer<FaCreativeCommonsZero/>ne</Icon>
+        <Icon to="/">Zer<FaCreativeCommonsZero/>nee</Icon>
             
         <ServicesContiner id="services">
             

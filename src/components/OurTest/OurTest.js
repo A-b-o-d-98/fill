@@ -24,22 +24,22 @@ const OurTest = () => {
            const type = event.target.id;
            const name = event.target.name;
 
-        //    window.localStorage.setItem('testType' , type)
+           window.localStorage.setItem('testType' , type)
 
-        //    window.localStorage.setItem('testname',name) 
+           window.localStorage.setItem('testname',name) 
         
-        // if(username&&password){
+        if(username&&password){
 
-        //     const x = post('/islogged',{username : username,password:password }).then((result)=>
-        //         {   result.mess ? window.location = 'test' :
-        //                           window.location = 'signup'
-        //         })
+            const x = post('/islogged',{username : username,password:password }).then((result)=>
+                {   result.mess ? window.location = 'test' :
+                                  window.location = 'test'
+                })
 
 
-        // }
+        }
 
-        //  else  
-        //      window.location = 'signup'
+         else  
+             window.location = 'test'
              
     }
 
@@ -56,7 +56,7 @@ const OurTest = () => {
     return ( 
         <> 
                  
-        <Icon to="/">Zer<FaCreativeCommonsZero/>nee</Icon>
+        <Icon to="/">Zer<FaCreativeCommonsZero/>ne</Icon>
             
         <ServicesContiner id="services">
             
@@ -70,8 +70,8 @@ const OurTest = () => {
                     <ServicesH2 >basics_one</ServicesH2>
                     <ServicesP>An exam that includes questions about the simple basics of the Python language - (variables definition , dataType , condition statements)</ServicesP>
                     <div>
-                    <Go onClick={window.location = 'test'} name='basics_one' id="withlimit" style={{marginRight:"15px"}}> Test With Limit</Go>
-                    <Go onClick={window.location = 'test'} name='basics_one' id="withoutlimit"> Test Without Limit</Go>
+                    <Go onClick={handletest} name='basics_one' id="withlimit" style={{marginRight:"15px"}}> Test With Limit</Go>
+                    <Go onClick={handletest} name='basics_one' id="withoutlimit"> Test Without Limit</Go>
                     </div>
                 </ServicesCard>
                 

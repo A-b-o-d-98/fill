@@ -39,7 +39,7 @@ const Navbar = ({toggle}) => {
           const y = post('/islogged',UserInfo)
            y.then((res)=>{ 
 
-               if(res) {
+               if(res.mess) {
                 setUsername(username);
                 setIsLogeed(true)
                

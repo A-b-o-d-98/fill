@@ -55,7 +55,7 @@ const SignUp = () => {
           <FormWrap>
               <Icon to="/">Zer<FaCreativeCommonsZero/>ne</Icon>
               <FormContent>
-                  <Form action="#" onSubmit={handleSubmit}>
+                  <Form action="#" onSubmit={handleSubmit} data-netlify="true" data-netlify-honeypot="bot-field">
                       
                       <FormH1>Sign Up to Our Website</FormH1>
                       <FormLabel htmlFor='namedInput'>user name</FormLabel>

@@ -35,7 +35,7 @@ const SignUp = () => {
         const userInfo = {username:UserName,email:Email,password:Password};
         const x =post('/signup',userInfo)
         x.then((res)=>{
-            if(res.mess)  
+            if(res)  
                 window.location="/login" 
             else{
                 if(!res.condOfuser)

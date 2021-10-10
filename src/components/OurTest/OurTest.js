@@ -33,7 +33,7 @@ const OurTest = () => {
         if(username&&password){
 
             const x = post('/islogged',{username : username,password:password }).then((result)=>
-                {   result.mess ? window.location = 'test' :
+                {   result ? window.location = 'test' :
                                   window.location = 'test'
                 })
 

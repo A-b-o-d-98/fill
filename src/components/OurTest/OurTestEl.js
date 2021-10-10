@@ -116,7 +116,7 @@ export const ServicesH1 = styled.h1`
  margin-bottom:26px;
  
  
- margin-up:64px;
+ margin-top:64px;
 
  @media screen and (max-width : 480px)
  {
@@ -146,7 +146,7 @@ export const Icon = styled(Link)`
 margin-left:32px;
 margin-top:32px;
 text-decoration : none;
-color:#f1225;
+color:#f12250;
 font-weight:700;
 font-size:32px;
 

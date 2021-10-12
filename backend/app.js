@@ -36,7 +36,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use(cookieParser());
-app.use(expressSession({secret:"kareem" , saveUninitialized:false , resave : false}))
+app.use(expressSession({secret:"Abude" , saveUninitialized:false , resave : false}))
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/signup', signupRouter);
@@ -48,7 +48,9 @@ app.use('/islogged',isloggedRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  next(createError(404));
+  res.header({"Access-Control-Allow-Origin": "*"});
+  next();
+  //next(createError(404));
 });
 
 // error handler

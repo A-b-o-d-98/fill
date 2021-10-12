@@ -15,13 +15,13 @@ router.post('/',async function(req, res, next) {
         password:req.body.password,
         testsInfo:[]
     })
-       await Users.exists({username:Username}).then((res)=>{res ? condOfuser = false :  condOfuser = true})
-       await Users.exists({email:req.body.email}).then((res)=>{res ? condOfemail = false :  condOfemail = true})
+    //    await Users.exists({username:Username}).then((res)=>{res ? condOfuser = false :  condOfuser = true})
+    //    await Users.exists({email:req.body.email}).then((res)=>{res ? condOfemail = false :  condOfemail = true})
      
-       condOfemail && condOfuser?  newUser.save((error,result)=>{error ? console.log(error):res.send({mess:true})}) :
-       res.send({condOfuser : condOfuser , condOfemail : condOfemail })
+    //    condOfemail && condOfuser?  newUser.save((error,result)=>{error ? console.log(error):res.send({mess:true})}) :
+    //    res.send({condOfuser : condOfuser , condOfemail : condOfemail })
 
-       console.log("username is : " , condOfuser , "email is :" ,condOfemail )
+    //    console.log("username is : " , condOfuser , "email is :" ,condOfemail )
                 
 });
 

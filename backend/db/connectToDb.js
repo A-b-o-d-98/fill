@@ -2,7 +2,7 @@ const mongo = require('mongoose');
 const dotenv = require("dotenv");
 
 dotenv.config();
-console.log(process.env.MONGO_URL);
+//console.log(process.env.MONGO_URL);
 function connect(){
     
     dotenv.config();

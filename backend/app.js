@@ -54,7 +54,7 @@ app.use('/islogged',isloggedRouter);
 // });
 
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://heuristic-khorana-f3628c.netlify.app");
+  res.setHeader("Access-Control-Allow-Origin", "*");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"

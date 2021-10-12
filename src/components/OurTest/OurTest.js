@@ -31,7 +31,7 @@ const OurTest = () => {
 
            window.localStorage.setItem('testname',name) 
 
-           .then((result)=>{   result.mess = window.location = 'test'})
+           .then((result)=>{   result = window.location = 'test'})
         
         // if(username && password){
        

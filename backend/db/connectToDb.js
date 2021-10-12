@@ -7,8 +7,8 @@ function connect(){
     
     dotenv.config();
    // process.env.MONGO_URL
-    
-    mongo.connect('mongodb://localhost:27017/project',
+    //'mongodb://localhost:27017/project'
+    mongo.connect(process.env.MONGO_URL,
 
     {useNewUrlParser : true},
 

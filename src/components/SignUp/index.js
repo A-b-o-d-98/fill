@@ -39,17 +39,17 @@ const SignUp = () => {
         const userInfo = {username:UserName,email:Email,password:Password};
         const x =post('/signup',userInfo)
         x.then((res)=>{
-            if(res.mess)  
+            // if(res.mess)  
                 window.location="/login" 
-            else{
-                if(!res.condOfuser)
-                    username.style.display = "block";
-                if(!res.condOfemail)
-                    email.style.display = "block";
+            // else{
+            //     if(!res.condOfuser)
+            //         username.style.display = "block";
+            //     if(!res.condOfemail)
+            //         email.style.display = "block";
                 
                
-            //    window.location='signup'
-            }})
+            //    window.location='signup'}
+            })
     }
     
 

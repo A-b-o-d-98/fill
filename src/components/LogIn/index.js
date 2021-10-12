@@ -20,7 +20,7 @@ const LogIn = () => {
     const password = document.getElementById('password')
     
     
-    const {get,post,response,loading,error}=usefetch(process.env.PORT||'http://localhost:3000');
+    const {get,post,response,loading,error}=usefetch(process.env.PORT);
 
         const handlePassword=(event)=>{
             setPassword(event.target.value)

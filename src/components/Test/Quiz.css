@@ -3,6 +3,22 @@ body,
 #root {
   height: 100%;
 }
+#btn{
+  color: rgb(236, 240, 247);
+  background-color:rgb(42, 59, 59) ;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+#btn:hover{
+  box-sizing: border-box;
+  color: rgb(234, 240, 250);
+  background-color:rgb(47, 184, 184) ;
+  padding: 12px;
+  font-size: 18px;
+}
 
 
 .App {

@@ -10,14 +10,17 @@ import Test from '../Test/test'
 import { FaCreativeCommonsZero } from 'react-icons/fa';
 
 import {Go,ServicesContiner,ServicesH1,ServicesWrapper,ServicesCard,ServicesIcon,ServicesH2,ServicesP,Icon} from './OurTestEl'
+const dotenv = require("dotenv");
 
+
+dotenv.config();
 const OurTest = () => {
     
     
 
     const  username = window.localStorage.getItem('username'); 
     const  password = window.localStorage.getItem('password');
-    const {get,post,response,loading,error}=usefetch('http://localhost:3000');
+    const {get,post,response,loading,error}=usefetch(process.env.PORT||'http://localhost:3000');
 
     const handletest = (event) =>
     {
@@ -30,18 +33,24 @@ const OurTest = () => {
 
         //    .then((result)=>{   result.mess = window.location = 'test'})
         
-        if(username&&password){
-
+        if(username && password){
+       
             const x = post('/islogged',{username : username,password:password }).then((result)=>
-                {   result.mess ? window.location = 'test' :
-                                  window.location = 'test'
+                {  
+                      result.mess ? window.location = 'test' :
+                                  window.location = 'signup'
                 })
 
 
         }
 
          else  
-             window.location = 'test'
+            window.location = 'signup'
+            //   const name = event.target.name;
+            //   const type = event.target.type;
+            //    window.localStorage.setItem('testname',name) 
+            //    window.localStorage.setItem('testType' , type)
+               
              
     }
 

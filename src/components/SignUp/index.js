@@ -4,9 +4,13 @@ import usefetch from 'use-http'
 import { FaCreativeCommonsZero } from 'react-icons/fa';
 
 import { Container,Icon,Form,FormH1,FormLabel,FormInput ,FormContent, FormButton,Text,FormWrap } from './SignupEl'
+const dotenv = require("dotenv");
+
+
+dotenv.config();
 
 const SignUp = () => {
-    const {get,post,response,loading,error}=usefetch('http://localhost:3000');
+    const {get,post,response,loading,error}=usefetch(process.env.PORT ||'http://localhost:3000');
     const [UserName,setUserName]=useState('');
     const [Password,setPassword]=useState('');
     const [Email,setEmail]=useState('');

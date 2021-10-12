@@ -91,6 +91,12 @@ cursor:pointer;
 @media screen and (max-width : 800px)
 {
     font-size: 10px;
+    
+}
+@media screen and (max-width : 1100px)
+{
+    font-size: 12px;
+    
 }
 
 `

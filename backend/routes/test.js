@@ -6,20 +6,37 @@ const basics_Level_Two = require('../db/basics_Level_Two');
 const Users = require('../db/users');
 
 
+router.post('/res', async(req,res,next)=>{
+   
+   const username = req.body.user;
+   const Result = req.body.result;
+   const testName = req.body.testName;
 
+  // هنا المشكلة ..
+   const x = await Users.find({username : username })
+   const PreviousResult = x[0].testsInfo;
+   await  Users.updateOne({username : username },{$set :
+                       {testsInfo :[ ...PreviousResult ,{ result : Result , testName : testName }
+                                      ]}},(err,res)=>{err ? console.log("error") : console.log(res)})
+   
+   res.send({mess : " jjjj"})
+
+   
+
+})
 router.post('/results', async(req,res,next)=>{
    const Username = req.body.username ;
-   const Result = req.body.result;
+   // const Result = req.body.result;
 
-   const x = await Users.find({username : Username })
-   const PreviousResult = x[0].testsInfo;
-   await  Users.updateOne({username : Username },{$set :
-                       {testsInfo :[ ...PreviousResult ,{ result : Result }
-                                      ]}},(err,res)=>{console.log(res)})
+   // const x = await Users.find({username : Username })
+   // const PreviousResult = x[0].testsInfo;
+   // await  Users.updateOne({username : Username },{$set :
+   //                     {testsInfo :[ ...PreviousResult ,{ result : Result }
+   //                                    ]}},(err,res)=>{console.log(res)})
    
-   
+                                      
  const y = await Users.find({username :Username})
- res.send({testsInfo: y[0].testsInfo})
+ res.send({mess : "true" , testsInfo: y[0].testsInfo})
 
     
 })
@@ -55,7 +72,7 @@ router.post('/',async (req,res,next)=>{
     
     var arrpart = [];
    
-    for (var i = 0 ; i < 20 ; i ++)
+    for (var i = 0 ; i < 4 ; i ++)
      {
         arrpart[i] = a[arr[i]];
      }
@@ -71,39 +88,44 @@ router.post('/',async (req,res,next)=>{
     
  
       const a = await  basics_Level_Two.find({});
-      var arrpart = [];
-      var i = 0;
-      var newarr = []
-      var cond ;
+       var arrpart = [];
+      for(var i = 0 ; i < 4 ; i ++)
+      {
+         arrpart[i] = a[i]
+      } 
+      // var arrpart = [];
+      // var i = 0;
+      // var newarr = []
+      // var cond ;
    
-      //random Indexes
+      // //random Indexes
    
    
    
-      for (var i = 0 ; i < 20 ; i ++)
-       {
-         arrpart[i] = a[i];
-         while(true)
-         {
-              rand = Number(((Math.random(i)*10).toFixed()));
-              rand = rand%3      
-               cond = newarr.filter((ele,index)=>{return ele == rand});
-                if(cond.length==0){
-                      newarr[newarr.length] = rand}
+      // for (var i = 0 ; i < 20 ; i ++)
+      //  {
+      //    arrpart[i] = a[i];
+      //    while(true)
+      //    {
+      //         rand = Number(((Math.random(i)*10).toFixed()));
+      //         rand = rand%3      
+      //          cond = newarr.filter((ele,index)=>{return ele == rand});
+      //           if(cond.length==0){
+      //                 newarr[newarr.length] = rand}
              
           
-              if(newarr.length == arrpart[i].incorrect_answer.length)
-                    break;
-         }
-         var temp = [];
-         for(var j = 0 ; j < arrpart[i].incorrect_answer.length ; j++){
-            temp[j] = arrpart[i].incorrect_answer[newarr[j]]; 
+      //         if(newarr.length == arrpart[i].incorrect_answer.length)
+      //               break;
+      //    }
+      //    var temp = [];
+      //    for(var j = 0 ; j < arrpart[i].incorrect_answer.length ; j++){
+      //       temp[j] = arrpart[i].incorrect_answer[newarr[j]]; 
              
-            // arrpart[i].incorrect_answers[j] = temp ;
-         }
+      //       // arrpart[i].incorrect_answers[j] = temp ;
+      //    }
          
-         arrpart[i].incorrect_answer = temp;
-       }
+      //    arrpart[i].incorrect_answer = temp;
+      //  }
          
       
     res.send({data:arrpart,mess:true})

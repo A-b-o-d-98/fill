@@ -78,6 +78,21 @@ useEffect  (async ()=> {
 
 },[])
 
+const f =()=>{
+      const btn = document.getElementById('btn');
+      btn.style.display = "none";
+      const user = window.localStorage.getItem('username');
+      const result =  ((NumsOfTrue/data.length)*100).toFixed();
+      const testName = window.localStorage.getItem('testname');
+      const x = post('/test/res' , {user : user , result : result , testName : testName });
+    
+      x.then((res)=>{
+
+            console.log(res)
+      })
+      
+}
+
 
 const handlenext = () =>
 { 
@@ -242,6 +257,7 @@ const hello = ()=>{
         cont.style.display='block';
 }
    const getResult = async()=>{
+    
     const i = document.getElementById('prevresult');
     if(i.style.display == 'none') {
       i.style.display = 'block'
@@ -253,12 +269,14 @@ const hello = ()=>{
 
     const username = window.localStorage.getItem('username');
     const result =  ((NumsOfTrue/data.length)*100).toFixed()
-    const UserInfo = {username : username , result :result}
+    const UserInfo = { username : username , result :result }
+     
 
          const z  = post('/test/results',UserInfo)
          await z.then((res)=>{
-          console.log(res.testsInfo)
-           setPrevTests(res.testsInfo) 
+
+                console.log(res.testsInfo)
+                setPrevTests(res.testsInfo) 
 
 
          })
@@ -350,9 +368,11 @@ const hello = ()=>{
    
    </TestContainer>
    <div id ="cont" style={{display:"none"}}>
-    
+   
+     
    <TestB id='result' onClick = {handleresult} style={{display:"none"}}>Result</TestB>
    <Result id ='finish' style={{display:"none"}}>
+   <button onClick={f} id='btn'>Save the result</button>
 
    <div id="res">
       {Anss.map((ele,index)=>{
@@ -381,21 +401,25 @@ const hello = ()=>{
             and your  Answers Average is :{((NumsOfTrue/data.length)*100).toFixed()}%
 
             <div>
+              
               <TestB onClick={getResult}style={{width: "57%"}}>If you want to see the previouse exams results </TestB>
-              <ui id="prevresult" style={{display:"none"}} >
+              <ul id="prevresult" style={{display:"none"}} >
                 {PrevTests != undefined ?
                 PrevTests.map((ele,index)=>{
               
                   return(
-                  <li key = {index}> Test{index+1} : {ele.result}%  </li>
+                    <>
+                  <li key = {index}> Test{index+1} : {ele.result}% - in <span style={{color : 'green '}}>{ele.testName}</span> </li>
+                  <hr/>
+                  </>
                   )
 
                 }) :<></>}
-              </ui>
+              </ul>
             </div>
             
           
-          </div>  
+            </div>  
         
       
    </Result>

@@ -17,7 +17,7 @@ var expressSession = require('express-session');
 var app = express();
 //const cors = require('cors');
 //'https://heuristic-khorana-f3628c.netlify.app/'
-app.use('https://heuristic-khorana-f3628c.netlify.app/');
+app.use('https://heuristic-khorana-f3628c.netlify.app');
 
 // app.use(cors())
 // var corsOptions = {
@@ -47,11 +47,23 @@ app.use('/islogged',isloggedRouter);
 
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  res.header({"Access-Control-Allow-Origin": "*"});
+// app.use(function(req, res, next) {
+//   res.header({"Access-Control-Allow-Origin": "*"});
+//   next();
+//   //next(createError(404));
+// });
+
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "https://heuristic-khorana-f3628c.netlify.app");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
   next();
-  //next(createError(404));
 });
+
+
+
 
 // error handler
 app.use(function(err, req, res, next) {

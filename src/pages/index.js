@@ -12,7 +12,7 @@ const Home = () => {
     
     const [isOpen , setIsOpen] = useState(false)
     const [username,setusername]=useState('');
-    const {get,post,response,loading,error}=usefetch('http://localhost:3000');
+    const {get,post,response,loading,error}=usefetch(process.env.PORT);
 
     const toggle = () => {
         setIsOpen(!isOpen);

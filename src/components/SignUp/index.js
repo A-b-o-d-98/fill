@@ -8,9 +8,9 @@ const dotenv = require("dotenv");
 
 
 dotenv.config();
-
+//||'http://localhost:3000'
 const SignUp = () => {
-    const {get,post,response,loading,error}=usefetch(process.env.PORT ||'http://localhost:3000');
+    const {get,post,response,loading,error}=usefetch(process.env.PORT );
     const [UserName,setUserName]=useState('');
     const [Password,setPassword]=useState('');
     const [Email,setEmail]=useState('');

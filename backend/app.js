@@ -18,7 +18,7 @@ var app = express();
 const cors = require('cors');
 app.use(cors())
 var corsOptions = {
-  origin: 'http://localhost:3001',
+  origin: 'https://heuristic-khorana-f3628c.netlify.app/',
   optionsSuccessStatus: 200 // For legacy browser support
 }
 

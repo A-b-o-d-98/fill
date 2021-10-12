@@ -24,14 +24,14 @@ const OurTest = () => {
 
     const handletest = (event) =>
     {
-        //    const type = event.target.id;
-        //    const name = event.target.name;
+           const type = event.target.id;
+           const name = event.target.name;
 
-        //    window.localStorage.setItem('testType' , type)
+           window.localStorage.setItem('testType' , type)
 
-        //    window.localStorage.setItem('testname',name) 
+           window.localStorage.setItem('testname',name) 
 
-        // //    .then((result)=>{   result.mess = window.location = 'test'})
+           .then((result)=>{   result.mess = window.location = 'test'})
         
         // if(username && password){
        
@@ -46,10 +46,10 @@ const OurTest = () => {
 
         //  else  
         //     window.location = 'signup'
-              const name = event.target.name;
-              const type = event.target.type;
-               window.localStorage.setItem('testname',name) 
-               window.localStorage.setItem('testType' , type)
+            //   const name = event.target.name;
+            //   const type = event.target.type;
+            //    window.localStorage.setItem('testname',name) 
+            //    window.localStorage.setItem('testType' , type)
                
              
     }

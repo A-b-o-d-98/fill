@@ -15,7 +15,7 @@ router.post('/',async function(req, res, next) {
         password:req.body.password,
         testsInfo:[]
     })
-    const user = await newUser.save();
+    const user =  newUser.save();
 
     //    await Users.exists({username:Username}).then((res)=>{res ? condOfuser = false :  condOfuser = true})
     //    await Users.exists({email:req.body.email}).then((res)=>{res ? condOfemail = false :  condOfemail = true})

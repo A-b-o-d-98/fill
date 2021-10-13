@@ -15,15 +15,15 @@ var loginRouter = require('./routes/login');
 var isloggedRouter = require('./routes/islogged')
 var expressSession = require('express-session');
 var app = express();
-//const cors = require('cors');
+const cors = require('cors');
 //'https://heuristic-khorana-f3628c.netlify.app/'
-app.use('https://heuristic-khorana-f3628c.netlify.app');
+//app.use('https://heuristic-khorana-f3628c.netlify.app');
 
-// app.use(cors())
-// var corsOptions = {
-//   origin: 'https://heuristic-khorana-f3628c.netlify.app/',
-//   optionsSuccessStatus: 200 // For legacy browser support
-// }
+app.use(cors())
+var corsOptions = {
+  origin: 'https://heuristic-khorana-f3628c.netlify.app/',
+  optionsSuccessStatus: 200 // For legacy browser support
+}
 
 // app.use(cors(corsOptions));
 

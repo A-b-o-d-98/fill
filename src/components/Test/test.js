@@ -8,10 +8,13 @@ import { FaCreativeCommonsZero } from 'react-icons/fa';
 import {N,Htrue,Hfalse,Twarn,All,TestUl,Que,TestA,TestContainer,TestHeader,Qeustion,TestB,Result,Timer} from './testEl'
 import Navbar from '../Navbar/index'
  
- 
+const dotenv = require("dotenv");
+
+
+dotenv.config();
 const Test = () =>
 {
-  const {get,post,response,loading,error}= usefetch('http://localhost:3000');
+  const {get,post,response,loading,error}= usefetch(process.env.PORT );
   const [data,setdata] = useState([]);
   const [step,setstep] = useState(0);
   const [PrevTests,setPrevTests] = useState() 

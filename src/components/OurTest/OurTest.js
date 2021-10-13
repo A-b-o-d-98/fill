@@ -31,22 +31,21 @@ const OurTest = () => {
 
            window.localStorage.setItem('testname',name) 
 
-           //.then((result)=>{   result = window.location = 'test'})
-           result = window.location = 'test'
+        //    .then((result)=>{   result.mess = window.location = 'test'})
         
-        // if(username && password){
+        if(username && password){
        
-        //     const x = post('/islogged',{username : username,password:password }).then((result)=>
-        //         {  
-        //               result.mess ? window.location = 'test' :
-        //                           window.location = 'signup'
-        //         })
+            const x = post('/islogged',{username : username,password:password }).then((result)=>
+                {  
+                      result.mess ? window.location = 'test' :
+                                  window.location = 'signup'
+                })
 
 
-        // }
+        }
 
-        //  else  
-        //     window.location = 'signup'
+         else  
+            window.location = 'signup'
             //   const name = event.target.name;
             //   const type = event.target.type;
             //    window.localStorage.setItem('testname',name) 

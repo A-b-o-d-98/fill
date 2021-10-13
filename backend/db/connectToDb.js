@@ -5,7 +5,7 @@ dotenv.config();
 //console.log(process.env.MONGO_URL);
 function connect(){
     
-    dotenv.config();
+   // dotenv.config();
    // process.env.MONGO_URL
     //'mongodb://localhost:27017/project'
     mongo.connect(process.env.MONGO_URL,

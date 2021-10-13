@@ -20,7 +20,7 @@ const OurTest = () => {
 
     const  username = window.localStorage.getItem('username'); 
     const  password = window.localStorage.getItem('password');
-    const {get,post,response,loading,error}=usefetch(process.env.PORT||'http://localhost:3000');
+    const {get,post,response,loading,error}=usefetch(process.env.PORT);
 
     const handletest = (event) =>
     {

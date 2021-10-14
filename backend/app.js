@@ -37,7 +37,17 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(cookieParser());
 app.use(expressSession({secret:"Abude" , saveUninitialized:false , resave : false}))
+
+if(process.env.NODE_ENV==='production'){
 app.use(express.static(path.join(__dirname, '../../build')));
+
+app.get('*',(res,req) => {
+  res.sendFile(path.resolve(__dirname,'../../','/build','index.html'));
+});
+
+}
+
+
 app.use('/', indexRouter);
 app.use('/signup', signupRouter);
 app.use('/login', loginRouter);
